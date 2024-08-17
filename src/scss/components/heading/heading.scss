@@ -1,0 +1,51 @@
+@use "../../abstracts/variables";
+@use "../../abstracts/mixins";
+@use "../../abstracts/animations";
+
+.heading{
+    background: map-get(variables.$headingVars, "background");
+    height: 100vh;
+    @include mixins.flexBox;
+
+    &__wrapper{
+
+        &--intro{
+            font-size: 225%;
+
+            &::after{
+                content: ".";
+                position: absolute;
+                color: map-get(variables.$headingVars, "accent");
+            }
+        }
+    }
+
+    &__info{
+        list-style: none;
+        font-size: 180%;
+        color: map-get(variables.$headingVars, "accent");
+        height: 4rem;
+        overflow: hidden;
+
+        &--item{
+            position: relative;
+            top: 0;
+            @include animations.slide;
+
+            &-span{
+                position: relative;
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    background: map-get(variables.$headingVars, "background");
+                    border-left: 0.2rem solid map-get(variables.$headingVars, "accent");
+                    @include animations.typing;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@use "../../abstracts/variables";
+@use "../../abstracts/mixins";
+
+.about{
+    @include mixins.flexBox;
+    flex-direction: column;
+
+    &__title{
+        font-size: 180%;
+    }
+
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &__info{
+        padding: 2rem 6rem;
+    }
+
+    &__skills{
+        padding: 1rem;
+        @include mixins.flexBox;
+        gap: 1rem;
+
+        &--image{
+            height: 9rem;
+            width: 9rem;
+            object-fit: contain;
+        }
+    }
+}
