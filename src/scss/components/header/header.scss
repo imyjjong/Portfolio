@@ -8,6 +8,7 @@
     height: 5rem;
     padding: 1rem;
     @include mixins.flexBox;
+    z-index: 1000;
 
     &__navigation{
         @include mixins.flexBox;

@@ -1,32 +1,52 @@
 @use "../../abstracts/variables";
 @use "../../abstracts/mixins";
+@use "../../abstracts/animations";
 
 .about{
     @include mixins.flexBox;
     flex-direction: column;
+    gap: 6rem;
 
     &__title{
-        font-size: 180%;
+        font-size: 300%;
     }
 
     &__wrapper{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 65% 35%;
     }
 
     &__info{
-        padding: 2rem 6rem;
+        padding: 2rem 10rem;
+        font-size: 120%;
     }
 
     &__skills{
         padding: 1rem;
         @include mixins.flexBox;
-        gap: 1rem;
+        position: relative;
+        overflow: hidden;
+
+        &--wrapper{
+            position: absolute;
+            left: -100%;
+            width: 100%;
+            @include mixins.flexBox;
+            gap: 2rem;
+            @include animations.skills;
+        }
 
         &--image{
+            //position: absolute;
             height: 9rem;
             width: 9rem;
             object-fit: contain;
+            
+            // @for $i from 1 through 5{
+            //     &:nth-of-type(#{$i}){
+            //         left: $i * -25%;
+            //     }       
+            // }
         }
     }
 }

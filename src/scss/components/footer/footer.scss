@@ -1,2 +1,17 @@
 @use "../../abstracts/variables";
 @use "../../abstracts/mixins";
+
+.footer{
+    padding: 2rem;
+    @include mixins.flexBox;
+    background: map-get(variables.$footerVars, "background");
+    height: 8rem;
+    color: grey;
+
+    &__information{
+        width: 80%;
+        @include mixins.flexBox;
+        border-top: 0.2rem solid rgb(68, 67, 67);
+        padding: 2rem;
+    }
+}

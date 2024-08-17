@@ -1,2 +1,24 @@
 @use "../../abstracts/variables";
 @use "../../abstracts/mixins";
+
+.contact{
+    width: 100%;
+    @include mixins.flexBox;
+    background: map-get(variables.$footerVars, "background");
+    padding: 2rem 1rem;
+
+    &__title{
+        font-size: 120%;
+        width: 10%;
+        @include mixins.flexBox;
+    }
+
+    &__wrapper{
+        width: 20%;
+        @include mixins.flexBox;
+        gap: 3rem;
+        font-size: 180%;
+        padding: 1rem;
+        color: white;
+    }
+}
