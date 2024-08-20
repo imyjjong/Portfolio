@@ -4,14 +4,21 @@
 .footer{
     padding: 2rem;
     @include mixins.flexBox;
-    background: map-get(variables.$footerVars, "background");
+    background: map-get(variables.$headingVars, "background");
     height: 8rem;
     color: grey;
+    border-top: 0.1rem solid rgb(62, 62, 62);
 
     &__information{
         width: 80%;
-        @include mixins.flexBox;
-        border-top: 0.2rem solid rgb(68, 67, 67);
+        display: flex;
+        justify-content: end;
+        align-items: center;
         padding: 2rem;
+
+        &--text{
+            font-weight: 400;
+            font-size: 90%;
+        }
     }
 }

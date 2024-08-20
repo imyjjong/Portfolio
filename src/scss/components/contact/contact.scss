@@ -4,21 +4,30 @@
 .contact{
     width: 100%;
     @include mixins.flexBox;
-    background: map-get(variables.$footerVars, "background");
+    flex-direction: column;
+    background: map-get(variables.$headingVars, "background");
     padding: 2rem 1rem;
+    height: 30rem;
+    gap: 1rem;
 
     &__title{
-        font-size: 120%;
-        width: 10%;
+        font-size: 200%;
+        width: 20%;
         @include mixins.flexBox;
+        border-bottom: 0.1rem solid rgb(125, 125, 125);
     }
 
     &__wrapper{
         width: 20%;
         @include mixins.flexBox;
         gap: 3rem;
-        font-size: 180%;
+        font-size: 210%;
         padding: 1rem;
         color: white;
+
+        &--link{
+            text-decoration: none;
+            color: white;
+        }
     }
 }

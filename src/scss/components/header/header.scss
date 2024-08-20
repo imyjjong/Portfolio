@@ -4,9 +4,8 @@
 .header{
     position: sticky;
     top: 0;
-    background: map-get(variables.$headingVars, "background");
-    height: 5rem;
-    padding: 1rem;
+    background: rgba(map-get(variables.$headingVars, "background"), 0.7);
+    padding: 1.5rem;
     @include mixins.flexBox;
     z-index: 1000;
 

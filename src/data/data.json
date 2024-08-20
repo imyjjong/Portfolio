@@ -1,0 +1,100 @@
+{
+    "projects": [
+        {
+            "id": 0,
+            "title": "Movie Discovery Site",
+            "image": "src/img/laravelmain.png",
+            "description": "Movie dairy made with Laravel (my first Laravel project)",
+            "github": "",
+            "live": ""
+        },
+        {
+            "id": 1,
+            "title": "Social Media",
+            "image": "src/img/socialmedia.png",
+            "description": "A Discord clone in Instagram styling",
+            "github": "",
+            "live": ""
+        },
+        {
+            "id": 2,
+            "title": "POGO Webshop",
+            "image": "src/img/Screenshot (101).png",
+            "description": "My first webshop",
+            "github": "https://github.com/imyjjong/BO.M4-POGO",
+            "live": "https://34916.hosts2.ma-cloud.nl/pogo/"
+        }
+    ],
+    "introText": [
+        {
+            "text": "Software developer student"
+        },
+        {
+            "text": "I love Javascript"
+        }
+    ],
+    "header": [
+        {
+            "item": "About",
+            "id": "#about"
+        },
+        {
+            "item": "Projects",
+            "id": "#projects"
+        },
+        {
+            "item": "Contact",
+            "id": "#contact"
+        }
+    ],
+    "skills": [
+        {
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png",
+            "alt": "HTML"
+        },
+        {
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/340px-CSS3_logo_and_wordmark.svg.png",
+            "alt": "CSS3"
+        },
+        {
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1280px-Sass_Logo_Color.svg.png",
+            "alt": "Sass"
+        },
+        {
+            "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+            "alt": "Javascript"
+        },
+        {
+            "image": "https://pngimg.com/d/php_PNG43.png",
+            "alt": "PHP"
+        }
+    ],
+    "buttons": [
+        {
+            "id": 0,
+            "class": "fa-regular fa-circle-dot"
+        },
+        {
+            "id": 1,
+            "class": "fa-regular fa-circle-dot"
+        },
+        {
+            "id": 2,
+            "class": "fa-regular fa-circle-dot"
+        }
+    ],
+    "contact": [
+        {
+            "class": "fa-brands fa-github contact__wrapper--icon",
+            "link": "https://www.github.com/imyjjong"
+        },
+        {
+            "class": "fa-brands fa-linkedin contact__wrapper--icon",
+            "link": "https://www.linkedin.com/in/sara-mohammed-b2328a29b/"
+        },
+        {
+            "class": "fa-solid fa-envelope contact__wrapper--icon",
+            "link": "mailto:smohammed0576@gmail.com"
+        }
+    ]
+}

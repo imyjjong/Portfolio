@@ -86,9 +86,8 @@ body {
 .header {
   position: sticky;
   top: 0;
-  background: #050505;
-  height: 5rem;
-  padding: 1rem;
+  background: rgba(5, 5, 5, 0.7);
+  padding: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,7 +191,8 @@ body {
   width: 100%;
 }
 .project__figure {
-  width: 50%;
+  width: 65rem;
+  height: 40rem;
 }
 .project__image {
   width: 100%;
@@ -236,15 +236,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #020202;
+  flex-direction: column;
+  background: #050505;
   padding: 2rem 1rem;
+  height: 30rem;
+  gap: 1rem;
 }
 .contact__title {
-  font-size: 120%;
-  width: 10%;
+  font-size: 200%;
+  width: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 0.1rem solid rgb(125, 125, 125);
 }
 .contact__wrapper {
   width: 20%;
@@ -252,8 +256,12 @@ body {
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  font-size: 180%;
+  font-size: 210%;
   padding: 1rem;
+  color: white;
+}
+.contact__wrapper--link {
+  text-decoration: none;
   color: white;
 }
 
@@ -262,17 +270,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #020202;
+  background: #050505;
   height: 8rem;
   color: grey;
+  border-top: 0.1rem solid rgb(62, 62, 62);
 }
 .footer__information {
   width: 80%;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
-  border-top: 0.2rem solid rgb(68, 67, 67);
   padding: 2rem;
+}
+.footer__information--text {
+  font-weight: 400;
+  font-size: 90%;
 }
 
 /*# sourceMappingURL=style.css.map */
