@@ -96,7 +96,7 @@ class Projects{
         for(let i = 0; i < this.getProjects.length; i++){
             if(this.getProjects[i].getAttribute("id") == 0){
                 console.log(this.getProjects[i]);
-                this.getButtons[0].className = "fa-solid fa-circle-dot";
+                this.getButtons[0].className = "fa-solid fa-circle-dot projects__buttons--button";
             }
             else{
                 this.getProjects[i].style.display = "none";
@@ -105,16 +105,15 @@ class Projects{
         for(let i = 0; i < this.getButtons.length; i++){
             this.getButtons[i].onclick = () => {
                 console.log(this.getButtons[i].id);
-                console.log(i);
                 console.log(this.getProjects[i + 1]);
                 for(let i = 0; i < this.getProjects.length; i++){
                     this.getProjects[i].style.display = "none";
                 }
                 this.getProjects[i].style.display = "flex";
                 for(let i = 0; i < this.getButtons.length; i++){
-                    this.getButtons[i].className = "fa-regular fa-circle-dot";
+                    this.getButtons[i].className = "fa-regular fa-circle-dot projects__buttons--button";
                 }
-                this.getButtons[i].className = "fa-solid fa-circle-dot";
+                this.getButtons[i].className = "fa-solid fa-circle-dot projects__buttons--button";
             }
         }
     }

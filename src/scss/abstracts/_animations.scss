@@ -29,3 +29,23 @@
 @mixin skills{
     animation: skills 5s steps(50) infinite;
 }
+
+@keyframes move {
+    0%,
+    100% {
+      transform: translateY(0) translateX(0) scale(1);
+    }
+    25% {
+      transform: translateY(-2rem) translateX(1.5rem) scale(1.1);
+    }
+    50% {
+      transform: translateY(2rem) translateX(-1.5rem) scale(0.9);
+    }
+    75% {
+      transform: translateY(-1rem) translateX(-2rem) scale(1.05);
+    }
+  }
+  
+@mixin move{
+    animation: move 8s ease-in-out infinite;
+}

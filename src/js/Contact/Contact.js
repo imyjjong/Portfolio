@@ -8,6 +8,7 @@ class Contact{
 
         this.contact = document.createElement("section");
         this.contact.classList.add("contact");
+        this.contact.setAttribute("id", "contact");
         this.body.appendChild(this.contact);
         
         this.title = document.createElement("h2");
@@ -24,6 +25,7 @@ class Contact{
             this.link = document.createElement("a");
             this.link.classList.add("contact__wrapper--link");
             this.link.setAttribute("href", data.contact[i].link);
+            this.link.setAttribute("target", "_BLANK");
             this.wrapper.appendChild(this.link);
 
             this.icon = document.createElement("i");

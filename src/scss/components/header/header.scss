@@ -4,7 +4,7 @@
 .header{
     position: sticky;
     top: 0;
-    background: rgba(map-get(variables.$headingVars, "background"), 0.7);
+    background: rgba(map-get(variables.$headingVars, "background"), 0.8);
     padding: 1.5rem;
     @include mixins.flexBox;
     z-index: 1000;
@@ -19,13 +19,13 @@
             justify-content: space-between;
             align-items: center;
             list-style: none;
-            font-weight: 500;
+            font-weight: 600;
 
             &-link{
                 text-decoration: none;
                 color: white;
                 transition: 0.2s all;
-                font-size: 120%;
+                font-size: 130%;
 
                 &:hover{
                     color: map-get(variables.$headingVars, "accent");

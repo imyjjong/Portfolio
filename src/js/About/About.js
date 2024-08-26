@@ -26,8 +26,16 @@ class About{
 
         this.info = document.createElement("div");
         this.info.classList.add("about__info");
-        this.info.innerText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sed inventore debitis reprehenderit aperiam velit aliquid nostrum perspiciatis repellat facilis labore quo, quod numquam, sint doloremque quisquam magni dolore magnam?";
+        this.info.innerText = "I am a 3th year software developer student at Mediacollege Amsterdam. I love working with Javascript. I also have experience with Sass (specifically SCSS) and PHP. I'm very interested in Laravel and made my first Laravel project a few months ago. I like learning and will always try to improve myself.";
         this.aboutSection.appendChild(this.info);
+
+        const data = await this.data.fetch();
+        // for(let i = 0; i < data.information.length; i++){
+        //     this.information = document.createElement("p");
+        //     this.information.classList.add("about__info--text");
+        //     this.information.innerText = data.information[i].text;
+        //     this.info.appendChild(this.information);
+        // }
 
         this.skills = document.createElement("div");
         this.skills.classList.add("about__skills");
@@ -37,13 +45,12 @@ class About{
         this.wrapper.classList.add("about__skills--wrapper");
         this.skills.appendChild(this.wrapper);
 
-        const data = await this.data.fetch();
         for(let i = 0; i < data.skills.length; i++){
             this.image = document.createElement("img");
             this.image.classList.add("about__skills--image");
             this.image.setAttribute("src", data.skills[i].image);
             this.image.setAttribute("alt", data.skills[i].alt);
-            this.skills.appendChild(this.image);
+            this.wrapper.appendChild(this.image);
         }
     }
 }

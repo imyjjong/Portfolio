@@ -2,25 +2,25 @@
     "projects": [
         {
             "id": 0,
-            "title": "Movie Discovery Site",
-            "image": "src/img/laravelmain.png",
-            "description": "Movie dairy made with Laravel (my first Laravel project)",
-            "github": "",
-            "live": ""
+            "title": "Social Media",
+            "image": "src/img/socialmedia.png",
+            "description": "A Discord clone in Instagram styling with infinite scrolling",
+            "github": "https://github.com/imyjjong/M7-BO/tree/main/Social%20Media",
+            "live": "https://34916.hosts2.ma-cloud.nl/socialMedia/"
         },
         {
             "id": 1,
-            "title": "Social Media",
-            "image": "src/img/socialmedia.png",
-            "description": "A Discord clone in Instagram styling",
-            "github": "",
-            "live": ""
+            "title": "Movie Discovery Site",
+            "image": "src/img/laravelmain.png",
+            "description": "Movie dairy made with Laravel (my first Laravel project)",
+            "github": "https://github.com/imyjjong/M7PROG-Laravel",
+            "live": "https://github.com/imyjjong/M7PROG-Laravel"
         },
         {
             "id": 2,
             "title": "POGO Webshop",
             "image": "src/img/Screenshot (101).png",
-            "description": "My first webshop",
+            "description": "My first webshop, made this in my first year",
             "github": "https://github.com/imyjjong/BO.M4-POGO",
             "live": "https://34916.hosts2.ma-cloud.nl/pogo/"
         }
@@ -72,15 +72,15 @@
     "buttons": [
         {
             "id": 0,
-            "class": "fa-regular fa-circle-dot"
+            "class": "fa-regular fa-circle-dot projects__buttons--button"
         },
         {
             "id": 1,
-            "class": "fa-regular fa-circle-dot"
+            "class": "fa-regular fa-circle-dot projects__buttons--button"
         },
         {
             "id": 2,
-            "class": "fa-regular fa-circle-dot"
+            "class": "fa-regular fa-circle-dot projects__buttons--button"
         }
     ],
     "contact": [
@@ -95,6 +95,17 @@
         {
             "class": "fa-solid fa-envelope contact__wrapper--icon",
             "link": "mailto:smohammed0576@gmail.com"
+        }
+    ],
+    "information": [
+        {
+            "text": "I am a 3th year software developer student at Mediacollege Amsterdam."
+        },
+        {
+            "text": "I love working with Javascript. I also have experience with Sass (specifically SCSS) and PHP. I'm very interested in Laravel and made my first Laravel project a few months ago."
+        },
+        {
+            "text": "I like learning and will always try to improve myself."
         }
     ]
 }

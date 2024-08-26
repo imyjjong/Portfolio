@@ -11,23 +11,26 @@
     gap: 1rem;
 
     &__title{
-        font-size: 200%;
-        width: 20%;
-        @include mixins.flexBox;
-        border-bottom: 0.1rem solid rgb(125, 125, 125);
+        @include mixins.title;
+        z-index: 1;
     }
 
     &__wrapper{
         width: 20%;
         @include mixins.flexBox;
         gap: 3rem;
-        font-size: 210%;
+        font-size: 280%;
         padding: 1rem;
         color: white;
 
         &--link{
             text-decoration: none;
             color: white;
+            transition: 0.2s all;
+
+            &:hover{
+                color: map-get(variables.$headingVars, "accent");
+            }
         }
     }
 }

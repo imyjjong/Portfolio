@@ -6,6 +6,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -42,6 +43,20 @@ body {
     margin: 0 -3.5rem 0 -3.5rem;
   }
 }
+@keyframes move {
+  0%, 100% {
+    transform: translateY(0) translateX(0) scale(1);
+  }
+  25% {
+    transform: translateY(-2rem) translateX(1.5rem) scale(1.1);
+  }
+  50% {
+    transform: translateY(2rem) translateX(-1.5rem) scale(0.9);
+  }
+  75% {
+    transform: translateY(-1rem) translateX(-2rem) scale(1.05);
+  }
+}
 .heading {
   background: #050505;
   height: 100vh;
@@ -49,8 +64,48 @@ body {
   justify-content: center;
   align-items: center;
 }
+.heading__dot {
+  width: 0.8rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background: rgba(100, 130, 173, 0.6);
+  position: absolute;
+  animation: move 8s ease-in-out infinite;
+  top: 10%;
+}
+.heading__dot:nth-child(2) {
+  animation-duration: 10s;
+  animation-delay: 1s;
+  left: 20%;
+  top: 30%;
+}
+.heading__dot:nth-child(3) {
+  animation-duration: 12s;
+  animation-delay: 2s;
+  left: 20%;
+  top: 70%;
+}
+.heading__dot:nth-child(4) {
+  animation-duration: 14s;
+  animation-delay: 3s;
+  left: 80%;
+  top: 50%;
+}
+.heading__dot:nth-child(5) {
+  animation-duration: 16s;
+  animation-delay: 5s;
+  left: 80%;
+  top: 20%;
+}
+.heading__div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
 .heading__wrapper--intro {
-  font-size: 225%;
+  font-size: 300%;
 }
 .heading__wrapper--intro::after {
   content: ".";
@@ -82,11 +137,26 @@ body {
   border-left: 0.2rem solid #6482AD;
   animation: typing 3s steps(45) infinite;
 }
+.heading__button {
+  background: none;
+  border: none;
+  padding: 2rem 4rem;
+  border: 0.2rem solid #6482AD;
+  color: #6482AD;
+  font-size: 120%;
+  transition: 0.4s all;
+  border-radius: 0.2rem;
+}
+.heading__button:hover {
+  cursor: pointer;
+  box-shadow: 0 0rem 0.3rem 0.1rem #6482AD;
+  text-shadow: 0 0rem 0.2rem #6482AD;
+}
 
 .header {
   position: sticky;
   top: 0;
-  background: rgba(5, 5, 5, 0.7);
+  background: rgba(5, 5, 5, 0.8);
   padding: 1.5rem;
   display: flex;
   justify-content: center;
@@ -105,13 +175,13 @@ body {
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  font-weight: 500;
+  font-weight: 600;
 }
 .header__navigation--list-link {
   text-decoration: none;
   color: white;
   transition: 0.2s all;
-  font-size: 120%;
+  font-size: 130%;
 }
 .header__navigation--list-link:hover {
   color: #6482AD;
@@ -125,15 +195,31 @@ body {
   gap: 6rem;
 }
 .about__title {
-  font-size: 300%;
+  font-size: 320%;
+  position: relative;
+}
+.about__title::after {
+  content: "";
+  width: 100%;
+  background: #6482AD;
+  height: 3rem;
+  position: absolute;
+  bottom: 5%;
+  right: -20%;
+  z-index: -1;
 }
 .about__wrapper {
   display: grid;
   grid-template-columns: 65% 35%;
 }
 .about__info {
-  padding: 2rem 10rem;
-  font-size: 120%;
+  padding: 2rem 14rem;
+  font-size: 130%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
 }
 .about__skills {
   padding: 1rem;
@@ -167,7 +253,18 @@ body {
   gap: 6rem;
 }
 .projects__title {
-  font-size: 300%;
+  font-size: 320%;
+  position: relative;
+}
+.projects__title::after {
+  content: "";
+  width: 100%;
+  background: #6482AD;
+  height: 3rem;
+  position: absolute;
+  bottom: 5%;
+  right: -20%;
+  z-index: -1;
 }
 .projects__wrapper {
   display: flex;
@@ -182,6 +279,9 @@ body {
   align-items: center;
   gap: 1rem;
   font-size: 110%;
+}
+.projects__buttons--button:hover {
+  cursor: pointer;
 }
 
 .project {
@@ -243,12 +343,19 @@ body {
   gap: 1rem;
 }
 .contact__title {
-  font-size: 200%;
-  width: 20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 0.1rem solid rgb(125, 125, 125);
+  font-size: 320%;
+  position: relative;
+  z-index: 1;
+}
+.contact__title::after {
+  content: "";
+  width: 100%;
+  background: #6482AD;
+  height: 3rem;
+  position: absolute;
+  bottom: 5%;
+  right: -20%;
+  z-index: -1;
 }
 .contact__wrapper {
   width: 20%;
@@ -256,13 +363,17 @@ body {
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  font-size: 210%;
+  font-size: 280%;
   padding: 1rem;
   color: white;
 }
 .contact__wrapper--link {
   text-decoration: none;
   color: white;
+  transition: 0.2s all;
+}
+.contact__wrapper--link:hover {
+  color: #6482AD;
 }
 
 .footer {
