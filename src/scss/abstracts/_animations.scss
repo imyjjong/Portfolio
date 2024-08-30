@@ -9,6 +9,17 @@
     animation: typing 3s steps(45) infinite;
 }
 
+@keyframes typingMedia{
+    100%{
+        left: 140%;
+        margin: 0 -2.5rem 0 -3.5rem;
+    }
+}
+
+@mixin typingMedia{
+    animation: typingMedia 3s steps(45) infinite;
+}
+
 @keyframes slide{
     100%{
         top: -10rem;
@@ -17,6 +28,16 @@
 
 @mixin slide{
     animation: slide 6s steps(2) infinite;
+}
+
+@keyframes slideMedia{
+    100%{
+        top: -6.5rem;
+    }
+}
+
+@mixin slideMedia{
+    animation: slideMedia 6s steps(2) infinite;
 }
 
 @keyframes skills{

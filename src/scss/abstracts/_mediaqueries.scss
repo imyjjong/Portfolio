@@ -1,0 +1,113 @@
+@use "mixins";
+@use "animations";
+
+@media screen and (max-width: 27rem){
+    .heading{
+        width: 100%;
+        &__wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+
+            &--intro{
+                font-size: 250%;
+            }
+        }
+        &__info{
+            font-size: 140%;
+            height: 3rem;
+
+            &--item{
+                @include animations.slideMedia;
+
+                &-span{
+                    &::after{
+                        @include animations.typingMedia;
+                    }
+                }
+            }
+        }
+        
+    }
+    .header{
+        &__navigation{
+            
+            &--list{
+                width: 90%;
+            }
+        }
+    }
+
+    .main{
+        padding: 2rem 4rem;
+    }
+
+    .about{
+
+        &__wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+        &__info{
+            text-align: center;
+            padding: 0;
+            font-size: 120%;
+        }
+
+        &__skills{
+            &--wrapper{
+                display: none;
+            }
+            &--resume{
+                position: static;
+            }
+        }
+    }
+
+    .projects{
+
+    }
+    .project{
+        flex-direction: column;
+
+        &__figure{
+            width: 100%;
+            height: 25rem;
+        }
+        &__info{
+            width: 100%;
+            gap: 1rem;
+
+            &--title{
+                font-size: 140%;
+            }
+
+            &--link{
+                font-size: 110%;
+            }
+        }
+    }
+
+    .contact{
+        padding: 0;
+        gap: 2rem;
+
+        &__wrapper{
+            font-size: 200%;
+        }
+    }
+    .footer{
+        padding: 0;
+
+        &__information{
+            @include mixins.flexBox;
+        }
+    }
+
+
+}
