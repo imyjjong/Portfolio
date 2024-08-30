@@ -52,5 +52,16 @@ class About{
             this.image.setAttribute("alt", data.skills[i].alt);
             this.wrapper.appendChild(this.image);
         }
+
+        this.resume = document.createElement("a");
+        this.resume.classList.add("about__skills--resume");
+        this.resume.setAttribute("href", "CV.png");
+        this.resume.download = "CV.png";
+        this.resume.innerText = "Download CV ";
+        this.skills.appendChild(this.resume);
+        
+        this.download = document.createElement("i");
+        this.download.classList = "fa-solid fa-download";
+        this.resume.appendChild(this.download);
     }
 }

@@ -93,19 +93,6 @@
         }
     }
     &__button{
-        background: none;
-        border: none;
-        padding: 2rem 4rem;
-        border: 0.2rem solid map-get(variables.$headingVars, "accent");
-        color: map-get(variables.$headingVars, "accent");
-        font-size: 120%;
-        transition: 0.4s all;
-        border-radius: 0.2rem;
-
-        &:hover{
-            cursor: pointer;
-            box-shadow: 0 0rem 0.3rem 0.1rem map-get(variables.$headingVars, "accent");
-            text-shadow: 0 0rem 0.2rem map-get(variables.$headingVars, "accent");
-        }
+        @include mixins.button;
     }
 }
