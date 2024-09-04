@@ -42,13 +42,13 @@
 
 @keyframes skills{
     100%{
-        left: 110%;
+        left: 200%;
         margin: 0 -3.5rem 0 -3.5rem;
     }
 }
 
 @mixin skills{
-    animation: skills 5s steps(50) infinite;
+    animation: skills 5s linear infinite;
 }
 
 @keyframes move {
