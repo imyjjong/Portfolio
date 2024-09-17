@@ -19,3 +19,5 @@ class Footer{
         this.information.appendChild(this.text);
     }
 }
+
+export default Footer;

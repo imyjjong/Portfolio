@@ -57,3 +57,5 @@ class Heading{
         this.buttonLink.appendChild(this.button);
     }
 }
+
+export default Heading;

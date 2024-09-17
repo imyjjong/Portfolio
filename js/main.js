@@ -1,1 +1,2 @@
-let app = new App();
+import App from '../src/js/App/App.js';
+const app = new App();

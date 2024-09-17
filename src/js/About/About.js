@@ -65,3 +65,5 @@ class About{
         this.resume.appendChild(this.download);
     }
 }
+
+export default About;
