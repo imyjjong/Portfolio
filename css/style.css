@@ -356,6 +356,10 @@ body {
   font-weight: 600;
   padding: 0.4rem 1rem;
   font-size: 120%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 .project__info--link:hover {
   color: #6482AD;
@@ -503,6 +507,83 @@ body {
   }
   .footer {
     padding: 0;
+  }
+  .footer__information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 54rem) {
+  .heading__button {
+    font-size: 200%;
+    padding: 3rem 4rem;
+  }
+  .main {
+    gap: 10rem;
+  }
+  .about__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .about__info {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 160%;
+  }
+  .about__skills--wrapper {
+    display: none;
+  }
+  .about__skills--resume {
+    position: static;
+    font-size: 150%;
+    padding: 2rem 3rem;
+  }
+  .projects {
+    margin-bottom: 10rem;
+  }
+  .projects__wrapper {
+    gap: 5rem;
+  }
+  .projects__buttons {
+    font-size: 180%;
+    gap: 2rem;
+  }
+  .project {
+    display: flex;
+    flex-direction: column;
+  }
+  .project__figure {
+    width: 100%;
+  }
+  .project__info {
+    width: 100%;
+    gap: 1rem;
+  }
+  .project__info--description {
+    font-size: 150%;
+  }
+  .project__info--wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+    gap: 0;
+  }
+  .project__info--text {
+    display: none;
+  }
+  .project__info--icon {
+    font-size: 140%;
   }
   .footer__information {
     display: flex;

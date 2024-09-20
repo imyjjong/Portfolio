@@ -111,3 +111,84 @@
 
 
 }
+
+@media screen and (max-width: 54rem){
+    .heading{
+        &__button{
+            font-size: 200%;
+            padding: 3rem 4rem;
+        }
+    }
+    .main{
+        gap: 10rem;
+    }
+    .about{
+
+        &__wrapper{
+            @include mixins.flexBox;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        &__info{
+            width: 100%;
+            padding: 1rem;
+            @include mixins.flexBox;
+            text-align: center;
+            font-size: 160%;
+        }
+        &__skills{
+            &--wrapper{
+                display: none;
+            }
+            &--resume{
+                position: static;
+                font-size: 150%;
+                padding: 2rem 3rem;
+            }
+        }
+    }
+    .projects{
+        margin-bottom: 10rem;
+        &__wrapper{
+            gap: 5rem;
+        }
+        &__buttons{
+            font-size: 180%;
+            gap: 2rem;
+        }
+    }
+    .project{
+        display: flex;
+        flex-direction: column;
+
+        &__figure{
+            width: 100%;
+        }
+        &__info{
+            width: 100%;
+            gap: 1rem;
+
+            &--description{
+                font-size: 150%;
+            }
+            &--wrapper{
+                width: 100%;
+                @include mixins.flexBox;
+                flex-direction: row;
+                color: white;
+                gap: 0;
+            }
+            &--text{
+                display: none;
+            }
+            &--icon{
+                font-size: 140%;
+            }
+        }
+    }
+    .footer{
+        &__information{
+            @include mixins.flexBox;
+        }
+    }
+}

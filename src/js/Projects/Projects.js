@@ -58,22 +58,30 @@ class Projects{
             this.live.classList.add("project__info--link");
             this.live.setAttribute("href", data.projects[i].live);
             this.live.setAttribute("target", "_blank");
-            this.live.innerText = "Live ";
             this.links.appendChild(this.live);
 
+            this.liveText = document.createElement("p");
+            this.liveText.classList.add("project__info--text");
+            this.liveText.innerText = "Live ";
+            this.live.appendChild(this.liveText);
+
             this.liveIcon = document.createElement("i");
-            this.liveIcon.classList = "fa-solid fa-arrow-right";
+            this.liveIcon.classList = "project__info--icon fa-solid fa-globe";
             this.live.appendChild(this.liveIcon);
 
             this.github = document.createElement("a");
             this.github.classList.add("project__info--link");
             this.github.setAttribute("href", data.projects[i].github);
             this.github.setAttribute("target", "_blank");
-            this.github.innerText = "Code ";
             this.links.appendChild(this.github);
 
+            this.githubText = document.createElement("p");
+            this.githubText.classList.add("project__info--text");
+            this.githubText.innerText = "Code ";
+            this.github.appendChild(this.githubText);
+
             this.githubIcon = document.createElement("i");
-            this.githubIcon.classList = "fa-solid fa-code";
+            this.githubIcon.classList = "project__info--icon fa-solid fa-code";
             this.github.appendChild(this.githubIcon);
         }
 

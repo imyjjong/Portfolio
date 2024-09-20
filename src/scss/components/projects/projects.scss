@@ -71,6 +71,8 @@
             font-weight: 600;
             padding: 0.4rem 1rem;
             font-size: 120%;
+            @include mixins.flexBox;
+            gap: 1rem;
 
             &:hover{
                 color: map-get(variables.$headingVars, "accent");

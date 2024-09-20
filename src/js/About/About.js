@@ -30,12 +30,6 @@ class About{
         this.aboutSection.appendChild(this.info);
 
         const data = await this.data.fetch();
-        // for(let i = 0; i < data.information.length; i++){
-        //     this.information = document.createElement("p");
-        //     this.information.classList.add("about__info--text");
-        //     this.information.innerText = data.information[i].text;
-        //     this.info.appendChild(this.information);
-        // }
 
         this.skills = document.createElement("div");
         this.skills.classList.add("about__skills");
