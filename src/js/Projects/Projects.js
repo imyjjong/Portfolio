@@ -50,6 +50,21 @@ class Projects{
             this.description.innerText = data.projects[i].description;
             this.info.appendChild(this.description);
 
+            this.languages = document.createElement("div");
+            this.languages.classList.add("project__languages");
+            this.info.appendChild(this.languages);
+            
+            let projectsData = data.projects[i];
+
+            for(let i = 0; i < projectsData.languages.length; i++){
+                this.language = document.createElement("span");
+                this.language.classList.add("project__languages--language");
+                this.language.style.background = projectsData.languages[i].background;
+                this.language.style.color = projectsData.languages[i].color;
+                this.language.innerText = projectsData.languages[i].name;
+                this.languages.appendChild(this.language);
+            }
+
             this.links = document.createElement("span");
             this.links.classList.add("project__info--wrapper");
             this.info.appendChild(this.links);
@@ -96,6 +111,16 @@ class Projects{
             this.buttons.appendChild(this.button);
         }
         this.projectSlide();
+
+        this.more = document.createElement("a");
+        this.more.classList.add("projects__more");
+        this.more.innerText = "More projects";
+        this.more.setAttribute("href", "projects.html");
+        this.projects.appendChild(this.more);
+
+        this.arrow = document.createElement("i");
+        this.arrow.classList = "fa-solid fa-arrow-right projects__more--arrow";
+        this.more.appendChild(this.arrow);
     }
     projectSlide(){
         this.getProjects = document.getElementsByClassName("project");

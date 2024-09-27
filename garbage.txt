@@ -100,3 +100,47 @@
             </div>
         </div>
     </footer>
+
+class Observer{
+    constructor(id, element, classlist, text, appending){
+        this.id = id;
+        this.element = element;
+        this.class = classlist;
+        this.text = text;
+        this.append = appending;
+        this.newElement = document.createElement(this.element);
+        this.newElement.classList = this.class;
+        this.newElement.setAttribute("id", this.id);
+        this.newElement.innerText = this.text
+        document.querySelector(this.append).appendChild(this.newElement);
+    }
+}
+
+class Project{
+    constructor(id){
+        this.data = new Fetch();
+        this.id = id;
+        this.createProject();
+    }
+    async createProject(){
+        const data = await this.data.fetch();
+        this.main = document.querySelector(".main__more");
+        document.querySelector("body").style.overflow = "hidden";
+        this.project = new Observer(this.id, "section", "single", "", ".main__more");
+        this.info = new Observer(this.id, "div", "single__info", "", ".single");
+        this.figure = new Observer(this.id, "figure", "single__info--figure", "", ".single__info");
+        this.image = new Observer(this.id, "img", "single__info--image", data.projects[this.id].image, ".single__info--figure");
+        this.title = new Observer(this.id, "h2", "single__info--title", data.projects[this.id].title, ".single__info");
+        this.description = new Observer(this.id, "p", "single__info--description", data.projects[this.id].description, ".single__info");
+        this.details = new Observer(this.id, "div", "single__details", "", ".single");
+        this.links = new Observer(this.id, "span", "single__details--links", "", ".single__details");
+        this.github = new Observer(this.id, "a", "single__details--link", data.projects[this.id].github, ".single__details--links");
+        this.githubIcon = new Observer(this.id, "i", "fa-brands fa-github single__details--link-icon", "", ".single__details--link");
+        this.live = new Observer(this.id, "a", "single__details--link", data.projects[this.id].live, ".single__details--links");
+        this.liveIcon = new Observer(this.id, "i", "fa-solid fa-globe single__details--link-icon", "", ".single__details--link");
+
+        console.log(this.live);
+    }
+}
+
+export default Project;

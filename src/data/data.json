@@ -6,7 +6,24 @@
             "image": "src/img/socialmedia.png",
             "description": "A Discord clone in Instagram styling with infinite scrolling",
             "github": "https://github.com/imyjjong/M7-BO/tree/main/Social%20Media",
-            "live": "https://34916.hosts2.ma-cloud.nl/socialMedia/"
+            "live": "https://34916.hosts2.ma-cloud.nl/socialMedia/",
+            "languages": [
+                {
+                    "name": " HTML",
+                    "background": "#FC4100",
+                    "color": "white"
+                },
+                {
+                    "name": " SCSS",
+                    "background": "#E78F81",
+                    "color": "white"
+                },
+                {
+                    "name": " Javascript",
+                    "background": "#FFEB00",
+                    "color": "black"
+                }
+            ]
         },
         {
             "id": 1,
@@ -14,7 +31,34 @@
             "image": "src/img/laravelmain.png",
             "description": "Movie dairy made with Laravel (my first Laravel project)",
             "github": "https://github.com/imyjjong/M7PROG-Laravel",
-            "live": "https://github.com/imyjjong/M7PROG-Laravel"
+            "live": "https://github.com/imyjjong/M7PROG-Laravel",
+            "languages": [
+                {
+                    "name": " HTML",
+                    "background": "#FC4100",
+                    "color": "white"
+                },
+                {
+                    "name": " Tailwind",
+                    "background": "#3A6D8C",
+                    "color": "white"
+                },
+                {
+                    "name": " Laravel",
+                    "background": "pink",
+                    "color": "black"
+                },
+                {
+                    "name": " Blade",
+                    "background": "dark#FC4100",
+                    "color": "black"
+                },
+                {
+                    "name": " PHP",
+                    "background": "blue",
+                    "color": "white"
+                }
+            ]
         },
         {
             "id": 2,
@@ -22,7 +66,144 @@
             "image": "src/img/Screenshot (101).png",
             "description": "My first webshop, made this in my first year",
             "github": "https://github.com/imyjjong/BO.M4-POGO",
-            "live": "https://34916.hosts2.ma-cloud.nl/pogo/"
+            "live": "https://34916.hosts2.ma-cloud.nl/pogo/",
+            "languages": [
+                {
+                    "name": " HTML",
+                    "background": "#FC4100",
+                    "color": "white"
+                },
+                {
+                    "name": " CSS",
+                    "background": "blue",
+                    "color": "white"
+                },
+                {
+                    "name": " Javascript",
+                    "background": "#FFEB00",
+                    "color": "black"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Banky",
+            "image": "src/img/banky.png",
+            "description": "A Banking app made for a schoolproject. Made with Javascript and SCSS",
+            "github": "",
+            "live": "",
+            "languages": [
+                {
+                    "name": " HTML",
+                    "background": "#FC4100",
+                    "color": "white"
+                },
+                {
+                    "name": " SCSS",
+                    "background": "hotpink",
+                    "color": "white"
+                },
+                {
+                    "name": " Javascript",
+                    "background": "#FFEB00",
+                    "color": "black"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Showcase",
+            "image": "src/img/showcase.png",
+            "description": "",
+            "github": "https://github.com/imyjjong/PROGM5.FE/tree/main/Opdracht%203",
+            "live": "https://34916.hosts2.ma-cloud.nl/progm503/",
+            "languages": [
+                {
+                    "name": " HTML",
+                    "background": "#FC4100",
+                    "color": "white"
+                },
+                {
+                    "name": " SCSS",
+                    "background": "hotpink",
+                    "color": "white"
+                },
+                {
+                    "name": " Javascript",
+                    "background": "#FFEB00",
+                    "color": "black"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Calendar",
+            "image": "src/img/calendar.png",
+            "description": "",
+            "github": "",
+            "live": "",
+            "languages": [
+                {
+                    "name": " HTML",
+                    "background": "#FC4100",
+                    "color": "white"
+                },
+                {
+                    "name": " SCSS",
+                    "background": "hotpink",
+                    "color": "white"
+                },
+                {
+                    "name": " Javascript",
+                    "background": "#FFEB00",
+                    "color": "black"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "title": "Encrypter & Decrypter",
+            "image": "src/img/encryptdecrypt.png",
+            "description": "",
+            "github": "",
+            "live": "",
+            "languages": [
+                {
+                    "name": " HTML",
+                    "background": "#FC4100",
+                    "color": "white"
+                },
+                {
+                    "name": " SCSS",
+                    "background": "hotpink",
+                    "color": "white"
+                },
+                {
+                    "name": " Javascript",
+                    "background": "#FFEB00",
+                    "color": "black"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "title": "SCSS Art",
+            "image": "src/img/cssart.png",
+            "description": "SCSS Art project. I made a portret of Avan Jogia in SCSS",
+            "github": "https://github.com/imyjjong/PROGM5.FE/tree/main/Opdracht%204",
+            "live": "https://34916.hosts2.ma-cloud.nl/cssart/",
+            "languages": [
+                {
+                    "name": " HTML",
+                    "background": "#FC4100",
+                    "color": "white"
+                },
+                {
+                    "name": " SCSS",
+                    "background": "hotpink",
+                    "color": "white"
+                }
+            ]
         }
     ],
     "introText": [
@@ -106,6 +287,26 @@
         },
         {
             "text": "I like learning and will always try to improve myself."
+        }
+    ],
+    "filters": [
+        {
+            "name": " Javascript"
+        },
+        {
+            "name": "SCSS"
+        },
+        {
+            "name": "PHP"
+        },
+        {
+            "name": "Laravel"
+        },
+        {
+            "name": "React"
+        },
+        {
+            "name": "Wordpress"
         }
     ]
 }

@@ -1,0 +1,23 @@
+@use "../../abstracts/variables";
+@use "../../abstracts/mixins";
+
+.filters{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+
+    &__filter{
+        font-size: 120%;
+        background: map-get(variables.$headingVars, "accent");
+        padding: 0.4rem 0.8rem;
+        border-radius: 1rem;
+        font-weight: 500;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
