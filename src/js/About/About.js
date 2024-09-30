@@ -49,8 +49,8 @@ class About{
 
         this.resume = document.createElement("a");
         this.resume.classList.add("about__skills--resume");
-        this.resume.setAttribute("href", "CV.pdf");
-        this.resume.download = "CV.pdf";
+        // this.resume.setAttribute("href", "CV.pdf");
+        // this.resume.download = "CV.pdf";
         this.resume.innerText = "Download CV ";
         this.skills.appendChild(this.resume);
         
