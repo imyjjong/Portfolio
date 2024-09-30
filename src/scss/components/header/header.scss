@@ -9,6 +9,19 @@
     @include mixins.flexBox;
     z-index: 1000;
 
+    &__home{
+        font-size: 140%;
+        color: map-get(variables.$baseVars, "color");
+        font-weight: 600;
+        text-decoration: none;
+        transition: 0.2s all;
+
+        &:hover{
+            cursor: pointer;
+            color: map-get(variables.$accentColors, "first");
+        }
+    }
+
     &__navigation{
         @include mixins.flexBox;
         width: 100%;

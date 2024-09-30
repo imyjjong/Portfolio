@@ -8,6 +8,8 @@ class Project{
         this.main = document.querySelector(".main__more");
         document.querySelector("body").style.overflow = "hidden";
 
+        window.scrollTo(0, 0);
+
         this.project = document.createElement("section");
         this.project.classList.add("single");
         this.main.appendChild(this.project);
@@ -17,6 +19,7 @@ class Project{
         this.project.appendChild(this.info);
 
         const data = await this.data.fetch();
+        document.title = data.projects[this.id].title + " | Portfolio";
         this.figure = document.createElement("figure");
         this.figure.classList.add("single__info--figure");
         this.info.appendChild(this.figure);
@@ -94,6 +97,7 @@ class Project{
         this.exitButton.onclick = () => {
             document.querySelector(".single").remove();
             document.querySelector("body").style.overflowY = "scroll";
+            document.title = "Projects | Portfolio";
         }
     }
 }

@@ -1,23 +1,51 @@
 @use "../../abstracts/variables";
 @use "../../abstracts/mixins";
 
+.aside{
+    width: 20%;
+
+    &__filters{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        width: 100%;
+        padding: 0 2rem;
+    }
+}
+
 .filters{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    gap: 1rem;
+    width: 14rem;
+    position: relative;
+    height: 5rem;
+    @include mixins.flexBox;
 
-    &__filter{
-        font-size: 120%;
+    &__input{
+        appearance: none;
         background: map-get(variables.$headingVars, "accent");
-        padding: 0.4rem 0.8rem;
+        width: 100%;
+        height: 4rem;
         border-radius: 1rem;
-        font-weight: 500;
+        position: absolute;
 
-        &:hover{
-            cursor: pointer;
+        &:focus{
+            outline: none;
         }
+
+        &:checked{
+            background: map-get(variables.$accentColors, "first");
+        }
+        &:not(:checked){
+            background: map-get(variables.$accentColors, "second");
+            z-index: 1000;
+            opacity: 0.6;
+        }
+    }
+
+    &__label{
+        position: absolute;;
+        font-size: 120%;
+        width: 100%;
+        padding: 1rem;
     }
 }

@@ -16,16 +16,22 @@ class More{
         for(let i = 0; i < data.projects.length; i++){
             this.project = document.createElement("article");
             this.project.classList.add("work");
+            this.project.classList += data.projects[i].allLanguages;
             this.more.appendChild(this.project);
 
             this.figure = document.createElement("figure");
             this.figure.classList.add("work__figure");
+            this.figure.setAttribute("id", data.projects[i].id);
             this.project.appendChild(this.figure);
+
+            this.moreInfo = document.createElement("div");
+            this.moreInfo.classList.add("work__figure--wrapper");
+            this.moreInfo.innerText = "More info";
+            this.figure.appendChild(this.moreInfo);
 
             this.image = document.createElement("img");
             this.image.classList.add("work__figure--image");
             this.image.setAttribute("src", data.projects[i].image);
-            this.image.setAttribute("id", data.projects[i].id);
             this.figure.appendChild(this.image);
 
             this.info = document.createElement("div");
@@ -54,7 +60,7 @@ class More{
         this.getProject();
     }
     async getProject(){
-        this.getProjects = document.getElementsByClassName("work__figure--image");
+        this.getProjects = document.getElementsByClassName("work__figure");
         const data = await this.data.fetch();
         for(let i = 0; i < this.getProjects.length; i++){
             this.getProjects[i].onclick = () => {

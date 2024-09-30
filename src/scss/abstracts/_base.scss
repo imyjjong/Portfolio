@@ -6,7 +6,7 @@ body{
     min-height: 100vh;
     font-size: 1.6rem;
     color: map-get(variables.$baseVars, "color");
-    font-family: map-get(variables.$baseVars, "font");
+    font-family: map-get(variables.$baseVars, "font"), sans-serif;
 }
 
 .main{

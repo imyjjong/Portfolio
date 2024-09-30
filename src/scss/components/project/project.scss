@@ -92,6 +92,12 @@
         &--link{
             font-size: 250%;
             color: map-get(variables.$baseVars, "color");
+            transition: 0.2s all;
+
+            &:hover{
+                cursor: pointer;
+                color: map-get(variables.$headingVars, "accent");
+            }
         }
     }
 }

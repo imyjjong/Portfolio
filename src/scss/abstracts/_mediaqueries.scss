@@ -1,6 +1,8 @@
 @use "mixins";
 @use "animations";
 
+//phone
+
 @media screen and (max-width: 27rem){
     .heading{
         width: 100%;
@@ -105,9 +107,33 @@
             @include mixins.flexBox;
         }
     }
+    .main__more{
+        @include mixins.flexBox;
+        flex-direction: column;
+        position: static;
+        padding: 0;
+    }
 
+    .aside{
+        width: 100% !important;
+        @include mixins.flexBox;
+        &__filters{
+            display: flex;
+            justify-content: center !important;
+            align-items: center !important;
+            flex-direction: row !important;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+    }
+    .more{
+        width: 100%;
+        @include mixins.flexBox;
+    }
 
 }
+
+//ipad
 
 @media screen and (max-width: 54rem){
     .heading{
@@ -187,5 +213,29 @@
         &__information{
             @include mixins.flexBox;
         }
+    }
+
+    .main__more{
+        @include mixins.flexBox;
+        flex-direction: column;
+    }
+
+    .aside{
+        width: 50%;
+        @include mixins.flexBox;
+        &__filters{
+            width: 100% !important;
+            display: flex !important;
+            flex-direction: row !important;
+            justify-content: center !important;
+            align-items: center !important;
+            flex-wrap: wrap;
+            padding: 1rem !important;
+            gap: 1rem;
+        }
+    }
+
+    .filters{
+        width: 100%;
     }
 }
