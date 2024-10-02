@@ -21,7 +21,7 @@
                 {
                     "name": " Javascript",
                     "background": "#FFEB00",
-                    "color": "black"
+                    "color": "white"
                 }
             ],
             "allLanguages": " SCSS Javascript"
@@ -46,8 +46,8 @@
                 },
                 {
                     "name": " Laravel",
-                    "background": "pink",
-                    "color": "black"
+                    "background": "darkred",
+                    "color": "white"
                 },
                 {
                     "name": " Blade",
@@ -83,7 +83,7 @@
                 {
                     "name": " Javascript",
                     "background": "#FFEB00",
-                    "color": "black"
+                    "color": "white"
                 }
             ],
             "allLanguages": " Javascript"
@@ -109,7 +109,7 @@
                 {
                     "name": " Javascript",
                     "background": "#FFEB00",
-                    "color": "black"
+                    "color": "white"
                 }
             ],
             "allLanguages": " SCSS Javascript"
@@ -135,7 +135,7 @@
                 {
                     "name": " Javascript",
                     "background": "#FFEB00",
-                    "color": "black"
+                    "color": "white"
                 }
             ],
             "allLanguages": " SCSS Javascript"
@@ -161,7 +161,7 @@
                 {
                     "name": " Javascript",
                     "background": "#FFEB00",
-                    "color": "black"
+                    "color": "white"
                 }
             ],
             "allLanguages": " SCSS Javascript"
@@ -187,7 +187,7 @@
                 {
                     "name": " Javascript",
                     "background": "#FFEB00",
-                    "color": "black"
+                    "color": "white"
                 }
             ],
             "allLanguages": " SCSS Javascript"
@@ -212,6 +212,53 @@
                 }
             ],
             "allLanguages": " SCSS"
+        },
+        {
+            "id": 8,
+            "title": "Wordpress",
+            "image": "src/img/wordpress.png",
+            "description": "Wordpress project. A site where student Software developers and Game developers can post their projects. This was my first Wordpress project and it's not a finished project. And a lot of the content on the site are placeholders.",
+            "github": "https://github.com/imyjjong/M8PROG-Wordpress",
+            "live": "https://34916.hosts2.ma-cloud.nl/m8prog/",
+            "languages": [
+                {
+                    "name": " Wordpress",
+                    "background": "#1E3E62",
+                    "color": "white"
+                },
+                {
+                    "name": " SCSS",
+                    "background": "hotpink",
+                    "color": "white"
+                }
+            ],
+            "allLanguages": " Wordpress SCSS"
+        },
+        {
+            "id": 9,
+            "title": "Cookie clicker",
+            "image": "src/img/cookie.png",
+            "description": "Cookie clicker made with Javascript",
+            "github": "https://github.com/imyjjong/Home-Projects/tree/main/Cookie%20Clicker",
+            "live": "https://34916.hosts2.ma-cloud.nl/homeprojects/Cookie%20Clicker",
+            "languages": [
+                {
+                    "name": " HTML",
+                    "background": "#FC4100",
+                    "color": "white"
+                },
+                {
+                    "name": " SCSS",
+                    "background": "hotpink",
+                    "color": "white"
+                },
+                {
+                    "name": " Javascript",
+                    "background": "#FFEB00",
+                    "color": "white"
+                }
+            ],
+            "allLanguages": " SCSS Javascript"
         }
     ],
     "introText": [

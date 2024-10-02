@@ -366,10 +366,11 @@ body {
   gap: 1rem;
 }
 .project__languages--language {
-  border-radius: 1rem;
+  border-radius: 0.1rem;
   padding: 0.2rem 0.8rem;
   font-weight: 600;
   font-size: 1.4rem;
+  border: 0.2rem solid;
 }
 .project__info {
   background: #050505;
@@ -728,7 +729,8 @@ body {
   padding: 0 0.8rem;
   font-size: 1.4rem;
   font-weight: 600;
-  border-radius: 2rem;
+  border-radius: 0.1rem;
+  border: 0.2rem solid;
 }
 .work__figure {
   width: 100%;
@@ -791,22 +793,19 @@ body {
 }
 .filters__input {
   appearance: none;
-  background: #6482AD;
   width: 100%;
   height: 4rem;
-  border-radius: 1rem;
+  border-radius: 0.1rem;
   position: absolute;
 }
 .filters__input:focus {
   outline: none;
 }
 .filters__input:checked {
-  background: rgb(135, 135, 207);
+  border: 0.2rem solid rgb(135, 135, 207);
 }
 .filters__input:not(:checked) {
-  background: rgb(209, 143, 183);
-  z-index: 1000;
-  opacity: 0.6;
+  border: none;
 }
 .filters__label {
   position: absolute;
@@ -895,7 +894,8 @@ body {
   font-size: 150%;
   font-weight: 600;
   padding: 0.4rem 1rem;
-  border-radius: 0.2rem;
+  border-radius: 0.1rem;
+  border: 0.2rem solid;
 }
 .single__details--links {
   width: 100%;

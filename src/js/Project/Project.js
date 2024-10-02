@@ -56,7 +56,7 @@ class Project{
             this.language = document.createElement("span");
             this.language.classList.add("single__details--languages-language");
             this.language.innerText = this.dataString.languages[i].name;
-            this.language.style.background = this.dataString.languages[i].background;
+            this.language.style.borderColor = this.dataString.languages[i].background;
             this.language.style.color = this.dataString.languages[i].color;
             this.languages.appendChild(this.language);
         }

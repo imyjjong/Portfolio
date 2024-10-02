@@ -69,10 +69,11 @@
         gap: 1rem;
 
         &--language{
-            border-radius: 1rem;
+            border-radius: 0.1rem;
             padding: 0.2rem 0.8rem;
             font-weight: 600;
             font-size: 1.4rem;
+            border: 0.2rem solid;
         }
     }
 

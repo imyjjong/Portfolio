@@ -59,7 +59,7 @@ class Projects{
             for(let i = 0; i < projectsData.languages.length; i++){
                 this.language = document.createElement("span");
                 this.language.classList.add("project__languages--language");
-                this.language.style.background = projectsData.languages[i].background;
+                this.language.style.borderColor = projectsData.languages[i].background;
                 this.language.style.color = projectsData.languages[i].color;
                 this.language.innerText = projectsData.languages[i].name;
                 this.languages.appendChild(this.language);

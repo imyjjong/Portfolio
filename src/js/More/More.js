@@ -46,7 +46,7 @@ class More{
             for(let i = 0; i < dataProjects.languages.length; i++){
                 this.language = document.createElement("span");
                 this.language.classList.add("work__languages--language");
-                this.language.style.background = dataProjects.languages[i].background;
+                this.language.style.borderColor = dataProjects.languages[i].background;
                 this.language.style.color = dataProjects.languages[i].color;
                 this.language.innerText = dataProjects.languages[i].name;
                 this.languages.appendChild(this.language);
