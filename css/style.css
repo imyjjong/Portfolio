@@ -174,6 +174,9 @@ body {
   align-items: center;
   z-index: 1000;
 }
+.header__wrapper {
+  width: 100%;
+}
 .header__home {
   font-size: 140%;
   color: whitesmoke;
@@ -267,7 +270,7 @@ body {
   object-fit: contain;
 }
 .about__skills--resume {
-  color: white;
+  color: whitesmoke;
   text-decoration: none;
   font-size: 150%;
   position: absolute;
@@ -285,6 +288,31 @@ body {
   cursor: pointer;
   box-shadow: 0 0rem 0.3rem 0.1rem #6482AD;
   text-shadow: 0 0rem 0.2rem #6482AD;
+}
+.about__button {
+  width: 100%;
+  background: none;
+  font-size: 140%;
+  border: none;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 600;
+  font-family: "Poppins";
+  transition: 0.2s all;
+}
+.about__button:hover {
+  cursor: pointer;
+  color: rgb(135, 135, 207);
+}
+.about__button:active {
+  outline: none;
+  color: #6482AD;
+}
+.about__button:focus {
+  outline: none;
 }
 
 .projects {
@@ -406,6 +434,84 @@ body {
 .project__info--link:hover {
   color: #6482AD;
   text-decoration: underline;
+}
+
+.movies {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+.movies__title {
+  font-size: 200%;
+  position: relative;
+}
+.movies__title::after {
+  content: "";
+  width: 90%;
+  background: #6482AD;
+  height: 3rem;
+  position: absolute;
+  bottom: -15%;
+  right: -10%;
+  z-index: -1;
+}
+
+.movie {
+  background: #050505;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  width: 35rem;
+  height: 35rem;
+}
+.movie__figure {
+  width: 30rem;
+}
+.movie__figure--image {
+  width: 30rem;
+  height: 20rem;
+  object-fit: cover;
+}
+.movie__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.movie__text {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 0.5rem;
+}
+.movie__text--title {
+  font-size: 120%;
+}
+.movie__text--year {
+  font-weight: 400;
+  font-size: 100%;
+}
+.movie__randomizer {
+  background: none;
+  border: none;
+  border: 0.2rem solid #6482AD;
+  color: whitesmoke;
+  font-size: 140%;
+  font-weight: 600;
+  padding: 1rem;
+}
+.movie__randomizer:hover {
+  cursor: pointer;
+}
+.movie__randomizer:focus {
+  background: #5675a2;
 }
 
 .contact {

@@ -1,9 +1,12 @@
+import Movies from '../Movies/Movies.js';
+
 class About{
     constructor(){
         this.data = new Fetch();
         this.createAbout();
     }
     async createAbout(){
+        let open = false;
         this.body = document.querySelector("body");
 
         this.main = document.createElement("main");
@@ -20,16 +23,16 @@ class About{
         this.title.innerText = "About";
         this.about.appendChild(this.title);
 
+        const data = await this.data.fetch();
+
         this.aboutSection = document.createElement("div");
         this.aboutSection.classList.add("about__wrapper");
         this.about.appendChild(this.aboutSection);
 
         this.info = document.createElement("div");
         this.info.classList.add("about__info");
-        this.info.innerText = "I am a 3th year software developer student at Mediacollege Amsterdam. I love working with Javascript. I also have experience with Sass (specifically SCSS) and PHP. I'm very interested in Laravel and made my first Laravel project a few months ago. I like learning and will always try to improve myself.";
+        this.info.innerText = data.information[0].text;
         this.aboutSection.appendChild(this.info);
-
-        const data = await this.data.fetch();
 
         this.skills = document.createElement("div");
         this.skills.classList.add("about__skills");
@@ -57,6 +60,33 @@ class About{
         this.download = document.createElement("i");
         this.download.classList = "fa-solid fa-download";
         this.resume.appendChild(this.download);
+
+        this.button = document.createElement("button");
+        this.button.classList.add("about__button");
+        this.button.innerText = "Click here";
+        this.about.appendChild(this.button);
+
+        this.arrow = document.createElement("i");
+        this.arrow.classList = "fa-solid fa-arrow-down fa-bounce about__button--icon open";
+        this.button.appendChild(this.arrow);
+
+        this.createMovies(open);
+    }
+    createMovies(open){
+        this.getButton = document.getElementsByClassName("about__button")[0];
+        this.getButton.onclick = () => {
+
+            if(open === false){
+                this.movies = new Movies();
+                document.querySelector(".about__button--icon").classList = "fa-solid fa-arrow-up fa-bounce about__button--icon closed";
+                open = true;
+            }
+            else{
+                document.querySelector(".movies").remove();
+                document.querySelector(".about__button--icon").classList = "fa-solid fa-arrow-down fa-bounce about__button--icon open";
+                open = false;
+            }
+        }
     }
 }
 

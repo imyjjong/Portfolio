@@ -50,12 +50,38 @@
         }
 
         &--resume{
-            color: white;
+            color: map-get(variables.$baseVars, "color");
             text-decoration: none;
             font-size: 150%;
             position: absolute;
             bottom: 10%;
             @include mixins.button;
+        }
+    }
+
+    &__button{
+        width: 100%;
+        background: none;
+        font-size: 140%;
+        border: none;
+        color: map-get(variables.$baseVars, "color");
+        @include mixins.flexBox;
+        gap: 1rem;
+        font-weight: 600;
+        font-family: map-get(variables.$baseVars, "font");
+        transition: 0.2s all;
+
+        &:hover{
+            cursor: pointer;
+            color: map-get(variables.$accentColors, "first");
+        }
+
+        &:active{
+            outline: none;
+            color: map-get(variables.$headingVars, "accent");
+        }
+        &:focus{
+            outline: none;
         }
     }
 }

@@ -2,32 +2,6 @@
     "projects": [
         {
             "id": 0,
-            "title": "Social Media",
-            "image": "src/img/socialmedia.png",
-            "description": "A Discord clone in Instagram styling with infinite scrolling",
-            "github": "https://github.com/imyjjong/M7-BO/tree/main/Social%20Media",
-            "live": "https://34916.hosts2.ma-cloud.nl/socialMedia/",
-            "languages": [
-                {
-                    "name": " HTML",
-                    "background": "#FC4100",
-                    "color": "white"
-                },
-                {
-                    "name": " SCSS",
-                    "background": "#E78F81",
-                    "color": "white"
-                },
-                {
-                    "name": " Javascript",
-                    "background": "#FFEB00",
-                    "color": "white"
-                }
-            ],
-            "allLanguages": " SCSS Javascript"
-        },
-        {
-            "id": 1,
             "title": "Movie Discovery Site",
             "image": "src/img/laravelmain.png",
             "description": "Movie dairy made with Laravel (my first Laravel project)",
@@ -61,6 +35,32 @@
                 }
             ],
             "allLanguages": " Tailwind Laravel PHP"
+        },
+        {
+            "id": 1,
+            "title": "Social Media",
+            "image": "src/img/socialmedia.png",
+            "description": "A Discord clone in Instagram styling with infinite scrolling",
+            "github": "https://github.com/imyjjong/M7-BO/tree/main/Social%20Media",
+            "live": "https://34916.hosts2.ma-cloud.nl/socialMedia/",
+            "languages": [
+                {
+                    "name": " HTML",
+                    "background": "#FC4100",
+                    "color": "white"
+                },
+                {
+                    "name": " SCSS",
+                    "background": "#E78F81",
+                    "color": "white"
+                },
+                {
+                    "name": " Javascript",
+                    "background": "#FFEB00",
+                    "color": "white"
+                }
+            ],
+            "allLanguages": " SCSS Javascript"
         },
         {
             "id": 2,
@@ -335,13 +335,7 @@
     ],
     "information": [
         {
-            "text": "I am a 3th year software developer student at Mediacollege Amsterdam."
-        },
-        {
-            "text": "I love working with Javascript. I also have experience with Sass (specifically SCSS) and PHP. I'm very interested in Laravel and made my first Laravel project a few months ago."
-        },
-        {
-            "text": "I like learning and will always try to improve myself."
+            "text": "I am a 3th year software developer student at Mediacollege Amsterdam. I love working with Javascript. I also have experience with Sass (specifically SCSS) and PHP. I'm very interested in Laravel and made my first Laravel project a few months ago. I like learning and will always try to improve myself."
         }
     ],
     "filters": [
@@ -362,6 +356,110 @@
         },
         {
             "name": "Wordpress"
+        }
+    ],
+    "movies": [
+        {
+            "id": 0,
+            "title": "Girl, Interrupted",
+            "image": "u.jpg",
+            "year": 1999
+        },
+        {
+            "id": 1,
+            "title": "Pulp Fiction",
+            "image": "src/img/pulpfiction.webp",
+            "year": 1994
+        },
+        {
+            "id": 2,
+            "title": "The Amazing Spider-Man",
+            "image": "src/img/spiderman.webp",
+            "year": 2012
+        },
+        {
+            "id": 3,
+            "title": "Hackers",
+            "image": "src/img/hackers.webp",
+            "year": 1995
+        },
+        {
+            "id": 4,
+            "title": "Bottoms",
+            "image": "src/img/bottoms.webp",
+            "year": 2023
+        },
+        {
+            "id": 5,
+            "title": "Back To The Future",
+            "image": "src/img/backtothefuture.webp",
+            "year": 1989
+        },
+        {
+            "id": 6,
+            "title": "Mean Girls",
+            "image": "src/img/meangirls.webp",
+            "year": 2004
+        },
+        {
+            "id": 7,
+            "title": "Black Swan",
+            "image": "src/img/swan.webp",
+            "year": 2010
+        },
+        {
+            "id": 8,
+            "title": "Edward Scissorhands",
+            "image": "src/img/edward.webp",
+            "year": 1990
+        },
+        {
+            "id": 9,
+            "title": "Return of the Jedi",
+            "image": "src/img/returnofthejedi.webp",
+            "year": 1983
+        },
+        {
+            "id": 10,
+            "title": "The Dark Knight",
+            "image": "src/img/darkknight.webp",
+            "year": 2008
+        },
+        {
+            "id": 11,
+            "title": "The Breakfast Club",
+            "image": "src/img/breakfastclub.webp",
+            "year": 1985
+        },
+        {
+            "id": 12,
+            "title": "Gia",
+            "image": "src/img/gia.webp",
+            "year": 1998
+        },
+        {
+            "id": 13,
+            "title": "Legally Blonde",
+            "image": "src/img/legallyblonde.webp",
+            "year": 2001
+        },
+        {
+            "id": 14,
+            "title": "Scream",
+            "image": "src/img/scream.webp",
+            "year": 1996
+        },
+        {
+            "id": 15,
+            "title": "Harry Potter and the Prisoner of Azkaban",
+            "image": "src/img/prisonerofazkaban.webp",
+            "year": 2004
+        },
+        {
+            "id": 16,
+            "title": "The Devil Wears Prada",
+            "image": "src/img/devilwearsprada.webp",
+            "year": 2006
         }
     ]
 }

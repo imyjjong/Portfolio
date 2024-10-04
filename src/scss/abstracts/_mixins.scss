@@ -22,6 +22,22 @@
     }
 }
 
+@mixin smallerTitle{
+    font-size: 200%;
+    position: relative;
+
+    &::after{
+        content: "";
+        width: 90%;
+        background: map-get(variables.$headingVars, "accent");
+        height: 3rem;
+        position: absolute;
+        bottom: -15%;
+        right: -10%;
+        z-index: -1;
+    }
+}
+
 @mixin button{
     background: none;
     border: none;
