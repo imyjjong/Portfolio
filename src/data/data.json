@@ -7,7 +7,7 @@
             "description": "Movie dairy made with Laravel (my first Laravel project)",
             "dutch": "Film website met Laravel gemaakt (mijn eerste Laravel project)",
             "github": "https://github.com/imyjjong/M7PROG-Laravel",
-            "live": "https://github.com/imyjjong/M7PROG-Laravel",
+            "live": "https://movies.saramohammed.com/",
             "languages": [
                 {
                     "name": " HTML",
@@ -40,7 +40,7 @@
         {
             "id": 1,
             "title": "Social Media",
-            "image": "src/img/socialmedia.png",
+            "image": "src/img/image.png",
             "description": "A Discord clone in Instagram styling with infinite scrolling",
             "dutch": "Een Discord clone gemaakt in Instagram styling met een oneindige scroll",
             "github": "https://github.com/imyjjong/M7-BO/tree/main/Social%20Media",
