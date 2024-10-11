@@ -1,5 +1,6 @@
 class MoreHeader{
     constructor(){
+        this.data = new Fetch();
         this.createHeader();
     }
     createHeader(){
@@ -18,6 +19,7 @@ class MoreHeader{
         this.home.innerText = "Portfolio";
         this.wrapper.appendChild(this.home);
     }
+    
 }
 
 export default MoreHeader;

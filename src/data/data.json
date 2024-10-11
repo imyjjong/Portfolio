@@ -5,6 +5,7 @@
             "title": "Movie Discovery Site",
             "image": "src/img/laravelmain.png",
             "description": "Movie dairy made with Laravel (my first Laravel project)",
+            "dutch": "Film website met Laravel gemaakt (mijn eerste Laravel project)",
             "github": "https://github.com/imyjjong/M7PROG-Laravel",
             "live": "https://github.com/imyjjong/M7PROG-Laravel",
             "languages": [
@@ -41,6 +42,7 @@
             "title": "Social Media",
             "image": "src/img/socialmedia.png",
             "description": "A Discord clone in Instagram styling with infinite scrolling",
+            "dutch": "Een Discord clone gemaakt in Instagram styling met een oneindige scroll",
             "github": "https://github.com/imyjjong/M7-BO/tree/main/Social%20Media",
             "live": "https://34916.hosts2.ma-cloud.nl/socialMedia/",
             "languages": [
@@ -67,6 +69,7 @@
             "title": "POGO Webshop",
             "image": "src/img/Screenshot (101).png",
             "description": "My first webshop, made this in my first year",
+            "dutch": "Mijn eerste webshop, gemaakt in mijn eerste jaar",
             "github": "https://github.com/imyjjong/BO.M4-POGO",
             "live": "https://34916.hosts2.ma-cloud.nl/pogo/",
             "languages": [
@@ -93,8 +96,9 @@
             "title": "Banky",
             "image": "src/img/banky.png",
             "description": "A Banking app made for a schoolproject. Made with Javascript and SCSS",
-            "github": "",
-            "live": "",
+            "dutch": "Een Bankieren app gemaakt voor een schoolopdracht. Gemaakt met Javascript en SCSS",
+            "github": "https://github.com/imyjjong/M7-FLEX/tree/main/Banky",
+            "live": "https://34916.hosts2.ma-cloud.nl/flex/Banky/",
             "languages": [
                 {
                     "name": " HTML",
@@ -118,7 +122,8 @@
             "id": 4,
             "title": "Showcase",
             "image": "src/img/showcase.png",
-            "description": "",
+            "description": "Schoolproject made with Javascript and SCSS",
+            "dutch": "School project gemaakt met Javascript en SCSS",
             "github": "https://github.com/imyjjong/PROGM5.FE/tree/main/Opdracht%203",
             "live": "https://34916.hosts2.ma-cloud.nl/progm503/",
             "languages": [
@@ -144,9 +149,10 @@
             "id": 5,
             "title": "Calendar",
             "image": "src/img/calendar.png",
-            "description": "",
-            "github": "",
-            "live": "",
+            "description": "A working calender app made for school",
+            "dutch": "Een werkende kalender app gemaakt voor school",
+            "github": "https://github.com/imyjjong/M7-BO/tree/main/Calender",
+            "live": "https://34916.hosts2.ma-cloud.nl/calendar/",
             "languages": [
                 {
                     "name": " HTML",
@@ -170,9 +176,10 @@
             "id": 6,
             "title": "Encrypter & Decrypter",
             "image": "src/img/encryptdecrypt.png",
-            "description": "",
-            "github": "",
-            "live": "",
+            "description": "A encrypter and decrypter made in Javascript. You can turn your messages into a secret code",
+            "dutch": "Een encrypter en decrypter gemaakt met Javascript. Je kan je berichten veranderen in een geheime code",
+            "github": "https://github.com/imyjjong/Home-Projects/tree/main/Encrypter%20%26%20Decrypter",
+            "live": "https://34916.hosts2.ma-cloud.nl/homeprojects/Encrypter%20&%20Decrypter/",
             "languages": [
                 {
                     "name": " HTML",
@@ -197,6 +204,7 @@
             "title": "SCSS Art",
             "image": "src/img/cssart.png",
             "description": "SCSS Art project. I made a portret of Avan Jogia in SCSS",
+            "dutch": "SCSS Art opdracht. Ik heb een portret van Avan Jogia gemaakt in SCSS",
             "github": "https://github.com/imyjjong/PROGM5.FE/tree/main/Opdracht%204",
             "live": "https://34916.hosts2.ma-cloud.nl/cssart/",
             "languages": [
@@ -218,6 +226,7 @@
             "title": "Wordpress",
             "image": "src/img/wordpress.png",
             "description": "Wordpress project. A site where student Software developers and Game developers can post their projects. This was my first Wordpress project and it's not a finished project. And a lot of the content on the site are placeholders.",
+            "dutch": "Wordpress project. Een website waar een software of game developer student hun werk kunnen posten. Dit is mijn eerste Wordpress project en het is niet helemaal af. En veel van de content op de site zijn placeholders",
             "github": "https://github.com/imyjjong/M8PROG-Wordpress",
             "live": "https://34916.hosts2.ma-cloud.nl/m8prog/",
             "languages": [
@@ -239,8 +248,36 @@
             "title": "Cookie clicker",
             "image": "src/img/cookie.png",
             "description": "Cookie clicker made with Javascript",
+            "dutch": "Een Cookie clicker gemaakt met Javascript",
             "github": "https://github.com/imyjjong/Home-Projects/tree/main/Cookie%20Clicker",
             "live": "https://34916.hosts2.ma-cloud.nl/homeprojects/Cookie%20Clicker",
+            "languages": [
+                {
+                    "name": " HTML",
+                    "background": "#FC4100",
+                    "color": "white"
+                },
+                {
+                    "name": " SCSS",
+                    "background": "hotpink",
+                    "color": "white"
+                },
+                {
+                    "name": " Javascript",
+                    "background": "#FFEB00",
+                    "color": "white"
+                }
+            ],
+            "allLanguages": " SCSS Javascript"
+        },
+        {
+            "id": 10,
+            "title": "Colors",
+            "image": "src/img/colors.png",
+            "description": "Random color generator, generates 100 random colors with Javascript with SCSS animation",
+            "dutch": "Willekeurige kleur maker, laat 100 willekeurige kleuren zien met behulp van Javascript met een SCSS animatie",
+            "github": "https://github.com/imyjjong/M7-FLEX/tree/main/Les%202%20Colors",
+            "live": "https://34916.hosts2.ma-cloud.nl/flex/Colors/",
             "languages": [
                 {
                     "name": " HTML",
@@ -335,7 +372,8 @@
     ],
     "information": [
         {
-            "text": "I am a 3th year software developer student at Mediacollege Amsterdam. I love working with Javascript. I also have experience with Sass (specifically SCSS) and PHP. I'm very interested in Laravel and made my first Laravel project a few months ago. I like learning and will always try to improve myself."
+            "text": "I am a 3th year software developer student at Mediacollege Amsterdam. I love working with Javascript. I also have experience with Sass (specifically SCSS) and PHP. I'm very interested in Laravel and made my first Laravel project a few months ago. I like learning and will always try to improve myself.",
+            "dutch": "Ik ben een derde jaar software developer student aan het Mediacollege van Amsterdam. Ik hou van Javascript. Ik heb ook ervaring met Sass (SCSS specifiek) en PHP. Ik ben erg geinteresseerd in Laravel en heb een paar maanden geleden mijn eerste Laravel project gemaakt. Ik hou van leren en zal altijd mijn best doen om te verbeteren."
         }
     ],
     "filters": [

@@ -29,9 +29,16 @@ class About{
         this.aboutSection.classList.add("about__wrapper");
         this.about.appendChild(this.aboutSection);
 
+        console.log(window.localStorage.getItem("dutch"));
+
         this.info = document.createElement("div");
         this.info.classList.add("about__info");
-        this.info.innerText = data.information[0].text;
+        if(window.localStorage.getItem("dutch") == null | window.localStorage.getItem("dutch") === "false"){
+            this.info.innerText = data.information[0].text;
+        }
+        else{
+            this.info.innerText = data.information[0].dutch;
+        }
         this.aboutSection.appendChild(this.info);
 
         this.skills = document.createElement("div");

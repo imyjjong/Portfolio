@@ -114,7 +114,12 @@ class Projects{
 
         this.more = document.createElement("a");
         this.more.classList.add("projects__more");
-        this.more.innerText = "More projects";
+        if(window.localStorage.getItem("dutch") == null | window.localStorage.getItem("dutch") === "false"){
+            this.more.innerText = "More projects";
+        }
+        else{
+            this.more.innerText = "Meer projecten";
+        }
         this.more.setAttribute("href", "projects.html");
         this.projects.appendChild(this.more);
 

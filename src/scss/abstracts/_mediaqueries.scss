@@ -1,3 +1,4 @@
+@use "variables";
 @use "mixins";
 @use "animations";
 
@@ -115,13 +116,13 @@
     }
 
     .aside{
-        width: 100% !important;
+        width: 100%;
         @include mixins.flexBox;
         &__filters{
             display: flex;
-            justify-content: center !important;
-            align-items: center !important;
-            flex-direction: row !important;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
             flex-wrap: wrap;
             gap: 1rem;
         }
@@ -129,6 +130,48 @@
     .more{
         width: 100%;
         @include mixins.flexBox;
+    }
+
+    .single{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 0rem;
+        gap: 2rem;
+        &__exit{
+            bottom: -100rem;
+            left: 25%;
+        }
+        &__info{
+            width: 100%;
+            height: auto;
+
+            &--figure{
+                width: 100%;
+            }
+            &--image{
+                width: 100%;
+            }
+            &--wrapper{
+                @include mixins.flexBox;
+                width: 100%;
+            }
+            &--description{
+                text-align: center;
+            }
+        }
+        &__details{
+            width: 100%;
+            padding: 0;
+            @include mixins.flexBox;
+            height: auto;
+
+            &--languages{
+                @include mixins.flexBox;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+        }
     }
 
 }
@@ -198,7 +241,7 @@
                 width: 100%;
                 @include mixins.flexBox;
                 flex-direction: row;
-                color: white;
+                color: map-get(variables.$baseVars, "color");
                 gap: 0;
             }
             &--text{
@@ -224,18 +267,30 @@
         width: 50%;
         @include mixins.flexBox;
         &__filters{
-            width: 100% !important;
-            display: flex !important;
-            flex-direction: row !important;
-            justify-content: center !important;
-            align-items: center !important;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
             flex-wrap: wrap;
-            padding: 1rem !important;
+            padding: 1rem;
             gap: 1rem;
         }
     }
 
     .filters{
         width: 100%;
+    }
+
+    .single{
+        &__details{
+            &--languages{
+                flex-direction: row;
+                flex-wrap: wrap;
+                &-language{
+                    font-size: 100%;
+                }
+            }
+        }
     }
 }

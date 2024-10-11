@@ -1,7 +1,8 @@
 class Project{
-    constructor(id){
+    constructor(id, dutch){
         this.data = new Fetch();
         this.id = id;
+        this.dutch = dutch;
         this.createProject();
     }
     async createProject(){
@@ -40,7 +41,12 @@ class Project{
 
         this.description = document.createElement("p");
         this.description.classList.add("single__info--description");
-        this.description.innerText = data.projects[this.id].description;
+        if(this.dutch === "false"){
+            this.description.innerText = data.projects[this.id].description;
+        }
+        else{
+            this.description.innerText = data.projects[this.id].dutch;
+        }
         this.infoWrapper.appendChild(this.description);
 
         this.details = document.createElement("div");

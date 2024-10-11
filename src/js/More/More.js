@@ -11,6 +11,7 @@ class More{
         this.more = document.createElement("section");
         this.more.classList.add("more");
         this.main.appendChild(this.more);
+        this.dutch = window.localStorage.getItem("dutch");
 
         const data = await this.data.fetch();
         for(let i = 0; i < data.projects.length; i++){
@@ -26,7 +27,12 @@ class More{
 
             this.moreInfo = document.createElement("div");
             this.moreInfo.classList.add("work__figure--wrapper");
-            this.moreInfo.innerText = "More info";
+            if(this.dutch === false){
+                this.moreInfo.innerText = "More info";
+            }
+            else{
+                this.moreInfo.innerText = "Meer informatie";
+            }
             this.figure.appendChild(this.moreInfo);
 
             this.image = document.createElement("img");
@@ -58,15 +64,16 @@ class More{
             this.info.appendChild(this.title);
         }
         this.getProject();
+        console.log(window.localStorage.getItem("dutch"));
     }
     async getProject(){
         this.getProjects = document.getElementsByClassName("work__figure");
         const data = await this.data.fetch();
+        let dutch = window.localStorage.getItem("dutch");
         for(let i = 0; i < this.getProjects.length; i++){
             this.getProjects[i].onclick = () => {
                 let getId = this.getProjects[i].getAttribute("id");
-                console.log(data.projects[getId]);
-                this.newProject = new Project(getId);
+                this.newProject = new Project(getId, dutch);
             }
         }
     }

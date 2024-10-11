@@ -144,3 +144,98 @@ class Project{
 }
 
 export default Project;
+
+async translate(dutch){
+        console.log(dutch);
+        const data = await this.data.fetch();
+        this.getTranslateButton = document.getElementsByClassName("moreHeader__button--icon")[0];
+        this.getProjects = document.getElementsByClassName("single__info--description")[0];
+        this.id = this.getProjects.getAttribute("id");
+        this.getTranslateButton.onclick = () => {
+            if(dutch == false){
+                console.log(this.id);
+                    this.getProjects.innerText = data.projects[this.id].dutch;
+                    console.log(this.id);
+                
+                this.getTranslateButton.classList.toggle("fa-flip-horizontal");
+                dutch = true;
+            }
+            else{
+                console.log(this.id);
+                    this.getProjects.innerText = data.projects[this.id].description;
+                    console.log(this.id)
+                
+                this.getTranslateButton.classList.toggle("fa-flip-horizontal");
+                dutch = false;
+            }
+            }
+        }
+
+
+        class Header{
+    constructor(){
+        this.data = new Fetch();
+        this.createHeader();
+    }
+    async createHeader(){
+        this.body = document.querySelector("body");
+
+        this.header = document.createElement("header");
+        this.header.classList.add("header");
+        this.body.appendChild(this.header);
+
+        this.navigation = document.createElement("nav");
+        this.navigation.classList.add("header__navigation");
+        this.header.appendChild(this.navigation);
+
+        this.list = document.createElement("ul");
+        this.list.classList.add("header__navigation--list");
+        this.navigation.appendChild(this.list);
+
+        const data = await this.data.fetch();
+        for(let i = 0; i < data.header.length; i++){
+            this.item = document.createElement("li");
+            this.item.classList.add("header__navigation--list-item");
+            this.list.appendChild(this.item);
+
+            this.link = document.createElement("a");
+            this.link.classList.add("header__navigation--list-link");
+            this.link.setAttribute("href", data.header[i].id);
+            this.link.innerText = data.header[i].item;
+            this.item.appendChild(this.link);
+        }
+        let dutch = false;
+
+        this.button = document.createElement("button");
+        this.button.classList.add("header__button");
+        this.button.onclick = () => {this.translate(dutch);};
+        this.header.appendChild(this.button);
+
+        this.translateIcon = document.createElement("i");
+        this.translateIcon.classList = "fa-solid fa-language header__button--icon";
+        this.button.appendChild(this.translateIcon);
+
+    }
+    async translate(dutch){
+        const data = await this.data.fetch();
+        this.getStatus = document.getElementsByClassName("header__button--icon")[0];
+        if(this.getStatus.className === "fa-solid fa-language header__button--icon"){
+                this.getStatus.classList.toggle("fa-flip-horizontal");
+                dutch = true;
+                window.localStorage.setItem("dutch", dutch);
+            }
+        else{
+            document.querySelector(".about__info").innerText = data.information[0].text;
+            this.getProject = document.getElementsByClassName("project__info--description");
+            for(let i = 0; i < this.getProject.length; i++){
+                this.getProject[i].innerText = data.projects[i].description;
+            }
+            this.getStatus.classList.toggle("fa-flip-horizontal");
+            dutch = false;
+            window.localStorage.setItem("dutch", dutch);
+        }
+        console.log(dutch);
+    }
+}
+
+export default Header;

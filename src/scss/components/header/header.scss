@@ -50,4 +50,42 @@
             }
         }
     }
+    &__button{
+        background: none;
+        border: none;
+        color: map-get(variables.$baseVars, "color");
+        padding: 0 1rem;
+
+        &:hover{
+            cursor: pointer;
+        }
+        &:focus{
+            outline: none;
+        }
+
+        &--icon{
+            font-size: 250%;
+        }
+    }
+}
+
+.moreHeader{
+    
+    &__button{
+        background: none;
+        border: none;
+        color: map-get(variables.$baseVars, "color");
+        padding: 0 1rem;
+
+        &:hover{
+            cursor: pointer;
+        }
+        &:focus{
+            outline: none;
+        }
+
+        &--icon{
+            font-size: 250%;
+        }
+    }
 }
