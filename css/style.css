@@ -956,8 +956,10 @@ body {
     gap: 2rem;
   }
   .single__exit {
-    bottom: -100rem;
-    left: 25%;
+    top: 0;
+    right: -15rem;
+    font-size: 120%;
+    z-index: 1000;
   }
   .single__info {
     width: 100%;
