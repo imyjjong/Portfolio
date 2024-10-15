@@ -57,16 +57,16 @@ class About{
             this.wrapper.appendChild(this.image);
         }
 
-        this.resume = document.createElement("a");
-        this.resume.classList.add("about__skills--resume");
-        // this.resume.setAttribute("href", "CV.pdf");
-        // this.resume.download = "CV.pdf";
-        this.resume.innerText = "Download CV ";
-        this.skills.appendChild(this.resume);
+        // this.resume = document.createElement("a");
+        // this.resume.classList.add("about__skills--resume");
+        // // this.resume.setAttribute("href", "CV.pdf");
+        // // this.resume.download = "CV.pdf";
+        // this.resume.innerText = "Download CV ";
+        // this.skills.appendChild(this.resume);
         
-        this.download = document.createElement("i");
-        this.download.classList = "fa-solid fa-download";
-        this.resume.appendChild(this.download);
+        // this.download = document.createElement("i");
+        // this.download.classList = "fa-solid fa-download";
+        // this.resume.appendChild(this.download);
 
         this.button = document.createElement("button");
         this.button.classList.add("about__button");

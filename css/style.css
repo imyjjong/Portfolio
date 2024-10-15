@@ -300,26 +300,6 @@ body {
   width: 9rem;
   object-fit: contain;
 }
-.about__skills--resume {
-  color: whitesmoke;
-  text-decoration: none;
-  font-size: 150%;
-  position: absolute;
-  bottom: 10%;
-  background: none;
-  border: none;
-  padding: 2rem 4rem;
-  border: 0.2rem solid #6482AD;
-  color: #6482AD;
-  font-size: 120%;
-  transition: 0.4s all;
-  border-radius: 0.2rem;
-}
-.about__skills--resume:hover {
-  cursor: pointer;
-  box-shadow: 0 0rem 0.3rem 0.1rem #6482AD;
-  text-shadow: 0 0rem 0.2rem #6482AD;
-}
 .about__button {
   width: 100%;
   background: none;

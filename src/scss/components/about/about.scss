@@ -49,14 +49,14 @@
             object-fit: contain;
         }
 
-        &--resume{
-            color: map-get(variables.$baseVars, "color");
-            text-decoration: none;
-            font-size: 150%;
-            position: absolute;
-            bottom: 10%;
-            @include mixins.button;
-        }
+        // &--resume{
+        //     color: map-get(variables.$baseVars, "color");
+        //     text-decoration: none;
+        //     font-size: 150%;
+        //     position: absolute;
+        //     bottom: 10%;
+        //     @include mixins.button;
+        // }
     }
 
     &__button{
