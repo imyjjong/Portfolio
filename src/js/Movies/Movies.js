@@ -5,7 +5,6 @@ class Movies{
         this.createMovies(index);
     }
     async createMovies(index){
-        this.dutch = window.localStorage.getItem("dutch");
         this.about = document.querySelector(".about");
         this.movies = document.createElement("section");
         this.movies.classList.add("movies");
@@ -13,7 +12,7 @@ class Movies{
 
         this.moviesTitle = document.createElement("h2");
         this.moviesTitle.classList.add("movies__title");
-        if(this.dutch === "false"){
+        if(window.localStorage.getItem("dutch") == null | window.localStorage.getItem("dutch") === "false"){
             this.moviesTitle.innerText = "Some movies I like";
         }
         else{
