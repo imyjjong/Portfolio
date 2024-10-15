@@ -48,7 +48,7 @@ class Heading{
 
         this.buttonLink = document.createElement("a");
         this.buttonLink.classList.add("heading__link");
-        this.buttonLink.setAttribute("href", "#about");
+        this.buttonLink.setAttribute("href", "#main");
         this.div.appendChild(this.buttonLink);
 
         this.button = document.createElement("button");

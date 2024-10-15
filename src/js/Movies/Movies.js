@@ -8,6 +8,9 @@ class Movies{
         this.createMovies(0);
     }
     async createMovies(index){
+        this.moviesWrapper = document.createElement("span");
+        this.moviesWrapper.classList.add("movies__wrapper");
+        this.movies.appendChild(this.moviesWrapper);
 
         this.moviesTitle = document.createElement("h2");
         this.moviesTitle.classList.add("movies__title");
@@ -17,7 +20,17 @@ class Movies{
         else{
             this.moviesTitle.innerText = "Een paar films die ik leuk vind";
         }
-        this.movies.appendChild(this.moviesTitle);
+        this.moviesWrapper.appendChild(this.moviesTitle);
+
+        this.movieInformation = document.createElement("button");
+        this.movieInformation.classList.add("movies__information");
+        this.moviesWrapper.appendChild(this.movieInformation);
+
+        this.infoIcon = document.createElement("i");
+        this.infoIcon.classList = "fa-solid fa-info fa-bounce movies__information--icon";
+        this.movieInformation.appendChild(this.infoIcon);
+
+        this.movieInformation.onclick = () => {this.widgetInfo();};
 
         const data = await this.data.fetch();
         this.movie = document.createElement("article");
@@ -64,6 +77,33 @@ class Movies{
         while((newIndex = Math.floor(Math.random() * this.length)) === prevIndex);
         this.movies.querySelectorAll(("*")).forEach((children) => children.remove());
         await this.createMovies(newIndex);
+    }
+    async widgetInfo(){
+        const data = await this.data.fetch();
+        console.log(data.widget[0]);
+        this.info = document.createElement("section");
+        this.info.classList.add("movies__info");
+        document.querySelector("body").appendChild(this.info);
+        document.querySelector("body").style.overflow = "hidden";
+
+        this.modal = document.createElement("article");
+        this.modal.classList.add("movies__modal");
+        this.info.appendChild(this.modal);
+
+        this.modalText = document.createElement("h3");
+        this.modalText.classList.add("movies__modal--text");
+        if(window.localStorage.getItem("dutch") == null | window.localStorage.getItem("dutch") === "false"){
+            this.modalText.innerText = data.widget[0].text;
+        }
+        else{      
+            this.modalText.innerText = data.widget[0].dutch;
+        }
+        this.modal.appendChild(this.modalText);
+
+        this.info.onclick = () => {
+            this.info.remove();
+            document.querySelector("body").style.overflow = "auto";
+        }
     }
 }
 

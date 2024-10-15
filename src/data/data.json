@@ -499,5 +499,11 @@
             "image": "src/img/devilwearsprada.webp",
             "year": 2006
         }
+    ],
+    "widget": [
+        {
+            "text": "A random movie widget made in 2 hours. The movies in this widget are a few of the movies I like.",
+            "dutch": "Een film widget gemaakt in 2 lesuren. De films in de widget zijn een paar van de films die ik leuk vind."
+        }
     ]
 }

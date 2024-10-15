@@ -11,6 +11,7 @@ class About{
 
         this.main = document.createElement("main");
         this.main.classList.add("main");
+        this.main.setAttribute("id", "main");
         this.body.appendChild(this.main);
 
         this.about = document.createElement("section");
@@ -70,7 +71,12 @@ class About{
 
         this.button = document.createElement("button");
         this.button.classList.add("about__button");
-        this.button.innerText = "Click here";
+        if(window.localStorage.getItem("dutch") == null | window.localStorage.getItem("dutch") === "false"){
+            this.button.innerText = "Click here";
+        }
+        else{
+            this.button.innerText = "Klik hier";
+        }
         this.about.appendChild(this.button);
 
         this.arrow = document.createElement("i");
@@ -85,7 +91,7 @@ class About{
 
             if(open === false){
                 this.movies = new Movies();
-                document.querySelector(".about__button--icon").classList = "fa-solid fa-arrow-up fa-bounce about__button--icon closed";
+                document.querySelector(".about__button--icon").classList = "fa-solid fa-arrow-up about__button--icon closed";
                 open = true;
             }
             else{

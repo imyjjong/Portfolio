@@ -1,5 +1,6 @@
 @use "../../abstracts/variables";
 @use "../../abstracts/mixins";
+@use "../../abstracts/animations";
 
 .movies{
     width: 100%;
@@ -8,8 +9,64 @@
     gap: 3rem;
     height: 35rem;
 
+    &__wrapper{
+        @include mixins.flexBox;
+        position: relative;
+    }
+
     &__title{
         @include mixins.smallerTitle;
+    }
+    &__information{
+        background: none;
+        border: none;
+        &:hover{
+            cursor: pointer;
+        }
+        &--icon{
+            background: none;
+            border: none;
+            font-size: 100%;
+            color: map-get(variables.$baseVars, "color");
+            background: map-get(variables.$headingVars, "accent");
+            height: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            aspect-ratio: 1/1;
+            padding: 0.4rem;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            right: -3rem;
+        }
+    }
+
+    &__info{
+        position: fixed;
+        top: 0;
+        left: 0;
+        @include mixins.flexBox;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 10000;
+        @include animations.modal;
+    }
+    &__modal{
+        background: map-get(variables.$baseVars, "background");
+        width: 60%;
+        height: 20rem;
+        @include mixins.flexBox;
+        padding: 2rem;
+        opacity: 0;
+        @include animations.popup;
+
+        &--text{
+            font-size: 120%;
+            text-align: center;
+            text-wrap: wrap;
+        }
     }
 }
 
