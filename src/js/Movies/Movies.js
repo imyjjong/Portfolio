@@ -1,14 +1,13 @@
 class Movies{
     constructor(){
         this.data = new Fetch();
-        let index = 0;
-        this.createMovies(index);
-    }
-    async createMovies(index){
         this.about = document.querySelector(".about");
         this.movies = document.createElement("section");
         this.movies.classList.add("movies");
         this.about.appendChild(this.movies);
+        this.createMovies(0);
+    }
+    async createMovies(index){
 
         this.moviesTitle = document.createElement("h2");
         this.moviesTitle.classList.add("movies__title");
@@ -58,12 +57,13 @@ class Movies{
         this.randomizer.onclick = () => {this.randomize(index);}
         this.wrapper.appendChild(this.randomizer);
     }
-    async randomize(index){
+    async randomize(prevIndex){
         const data = await this.data.fetch();
         this.length = data.movies.length;
-        index = Math.floor(Math.random() * this.length);
-        document.querySelector(".movies").remove();
-        this.createMovies(index);
+        let newIndex = 0;
+        while((newIndex = Math.floor(Math.random() * this.length)) === prevIndex);
+        this.movies.querySelectorAll(("*")).forEach((children) => children.remove());
+        await this.createMovies(newIndex);
     }
 }
 
