@@ -296,6 +296,33 @@
                 }
             ],
             "allLanguages": " SCSS Javascript"
+        },
+        {
+            "id": 11,
+            "title": "Intertoys Clone",
+            "image": "src/img/intertoys.png",
+            "description": "Made an Intertoys clone with Javascript and SCSS. I made this in a few days. I'm probably gonna make it functional",
+            "dutch": "Een Intertoys clone gemaakt met Javascript en SCSS. Ik heb dit in een paar dagen gemaakt. Ik ga hem waarschijnlijk ook nog functioneel maken",
+            "github": "https://github.com/imyjjong/Home-Projects/tree/main/Intertoys%20Clone",
+            "live": "https://34916.hosts2.ma-cloud.nl/homeprojects/Intertoys%20Clone",
+            "languages": [
+                {
+                    "name": " HTML",
+                    "background": "#FC4100",
+                    "color": "white"
+                },
+                {
+                    "name": " SCSS",
+                    "background": "hotpink",
+                    "color": "white"
+                },
+                {
+                    "name": " Javascript",
+                    "background": "#FFEB00",
+                    "color": "white"
+                }
+            ],
+            "allLanguages": " SCSS Javascript"
         }
     ],
     "introText": [
