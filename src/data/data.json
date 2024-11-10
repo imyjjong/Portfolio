@@ -120,6 +120,33 @@
         },
         {
             "id": 4,
+            "title": "Pokedex",
+            "image": "src/img/pokedex.png",
+            "description": "I made this Pokedex project in React and I made it in a few hours. And not gonna lie, I actually enjoyed making this which was kind of unexpected. ",
+            "dutch": "Ik heb dit Pokedex project in React gemaakt en dit heb ik gedaan binnen een paar uur. Ik vond het verrassend genoeg best leuk om te maken.",
+            "github": "https://github.com/imyjjong/M9Skills/tree/main/pokedex",
+            "live": "https://pokedex.saramohammed.com/",
+            "languages": [
+                {
+                    "name": " HTML",
+                    "background": "#FC4100",
+                    "color": "white"
+                },
+                {
+                    "name": " SCSS",
+                    "background": "hotpink",
+                    "color": "white"
+                },
+                {
+                    "name": " React",
+                    "background": "#608BC1",
+                    "color": "white"
+                }
+            ],
+            "allLanguages": " SCSS React"
+        },
+        {
+            "id": 5,
             "title": "Banky",
             "image": "src/img/banky.png",
             "description": "A Banking app made for a schoolproject. Made with Javascript and SCSS",
@@ -146,7 +173,7 @@
             "allLanguages": " SCSS Javascript"
         },
         {
-            "id": 5,
+            "id": 6,
             "title": "Showcase",
             "image": "src/img/showcase.png",
             "description": "Schoolproject made with Javascript and SCSS",
@@ -173,7 +200,7 @@
             "allLanguages": " SCSS Javascript"
         },
         {
-            "id": 6,
+            "id": 7,
             "title": "Calendar",
             "image": "src/img/calendar.png",
             "description": "A working calender app made for school",
@@ -200,7 +227,7 @@
             "allLanguages": " SCSS Javascript"
         },
         {
-            "id": 7,
+            "id": 8,
             "title": "Encrypter & Decrypter",
             "image": "src/img/encryptdecrypt.png",
             "description": "A encrypter and decrypter made in Javascript. You can turn your messages into a secret code",
@@ -227,7 +254,7 @@
             "allLanguages": " SCSS Javascript"
         },
         {
-            "id": 8,
+            "id": 9,
             "title": "SCSS Art",
             "image": "src/img/cssart.png",
             "description": "SCSS Art project. I made a portret of Avan Jogia in SCSS",
@@ -249,7 +276,7 @@
             "allLanguages": " SCSS"
         },
         {
-            "id": 9,
+            "id": 10,
             "title": "Wordpress",
             "image": "src/img/wordpress.png",
             "description": "Wordpress project. A site where student Software developers and Game developers can post their projects. This was my first Wordpress project and it's not a finished project. And a lot of the content on the site are placeholders.",
@@ -271,7 +298,7 @@
             "allLanguages": " Wordpress SCSS"
         },
         {
-            "id": 10,
+            "id": 11,
             "title": "Cookie clicker",
             "image": "src/img/cookie.png",
             "description": "Cookie clicker made with Javascript",
@@ -298,7 +325,7 @@
             "allLanguages": " SCSS Javascript"
         },
         {
-            "id": 11,
+            "id": 12,
             "title": "Colors",
             "image": "src/img/colors.png",
             "description": "Random color generator, generates 100 random colors with Javascript with SCSS animation",
@@ -325,7 +352,7 @@
             "allLanguages": " SCSS Javascript"
         },
         {
-            "id": 12,
+            "id": 13,
             "title": "Intertoys Clone",
             "image": "src/img/intertoys.png",
             "description": "Made an Intertoys clone with Javascript and SCSS. I made this in a few days. I'm probably gonna make it functional",
