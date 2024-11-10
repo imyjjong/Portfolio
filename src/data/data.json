@@ -93,6 +93,33 @@
         },
         {
             "id": 3,
+            "title": "Music Library",
+            "image": "src/img/music.png",
+            "description": "My first React project. I made a music library with React for a school project. I'm still working on it but this is what I have so far.",
+            "dutch": "Mijn eerste React project. Ik heb een muziek player gemaakt met React voor een school opdracht. Het is nog niet af maar dit is wat ik tot nu toe heb.",
+            "github": "https://github.com/imyjjong/M9Skills/tree/main/music/music",
+            "live": "https://music.saramohammed.com/",
+            "languages": [
+                {
+                    "name": " HTML",
+                    "background": "#FC4100",
+                    "color": "white"
+                },
+                {
+                    "name": " SCSS",
+                    "background": "hotpink",
+                    "color": "white"
+                },
+                {
+                    "name": " React",
+                    "background": "#608BC1",
+                    "color": "white"
+                }
+            ],
+            "allLanguages": " SCSS React"
+        },
+        {
+            "id": 3,
             "title": "Banky",
             "image": "src/img/banky.png",
             "description": "A Banking app made for a schoolproject. Made with Javascript and SCSS",
